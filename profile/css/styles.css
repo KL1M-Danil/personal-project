@@ -39,29 +39,33 @@ body {
 
 .logo {
   text-transform: uppercase;
-  font-family: Audiowide, sans-serif;
+  font-family: Permanent Marker, sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
+}
+
+.menu {
+  text-align: right;
 }
 
 .submenu {
   display: none;
   text-transform: uppercase;
   font-family: Quicksand, sans-serif;
+  font-size: 1.2rem;
 }
 .submenu-item {
   margin-bottom: 5px;
   background-color: #191970;
   border-radius: 10px;
-  padding: 5px; 
+  padding: 5px;
+  text-align: center;
 }
 
 .submenu-item:last-child {
   margin-bottom: 0;
 }
 
-
 ul.menu > li:hover > ul.submenu {
   display: block;
-  transition-duration: 2s;
 }
