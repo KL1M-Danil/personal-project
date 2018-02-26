@@ -14,7 +14,8 @@ a {
 /*----MASTHEAD----*/
 
 body {
-  background-color: #191970;
+  background-color: hsl(240, 40%, 12%);
+  /*background-color: #191970;*/
 }
 
 .mastheader {
@@ -28,7 +29,7 @@ body {
 }
 
 .menu-icon {
-  background-image: url("../img/menu-icon.png");
+  background-image: url("../img/menu-icon2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -54,12 +55,14 @@ body {
   font-family: Quicksand, sans-serif;
   font-size: 1.2rem;
 }
+
 .submenu-item {
   margin-bottom: 5px;
   background-color: #191970;
   border-radius: 10px;
   padding: 5px;
   text-align: center;
+  border: 2px solid transparent;
 }
 
 .submenu-item:last-child {
@@ -68,4 +71,79 @@ body {
 
 ul.menu > li:hover > ul.submenu {
   display: block;
+}
+
+/*PROMO*/
+
+.promo-title {
+  text-transform: uppercase;
+  font-family: Quicksand, sans-serif;
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: var(--main-font-color);
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 5px;
+}
+
+.promo-subtitle {
+  font-family: Rock salt, serif;
+  font-weight: 200;
+  font-size: 1rem;
+  color: var(--main-font-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.promo-btns-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promo-btn {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: blue;
+  padding: 5px;
+  width: 150px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: Quicksand, serif;
+  font-weight: 200;
+  font-size: 1rem;
+  color: var(--main-font-color);
+}
+
+@media (min-width: 768px) {
+  .logo {
+    text-transform: uppercase;
+    font-family: Permanent Marker, sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .submenu {
+    display: flex;
+  }
+
+  .submenu-item {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+
+  .submenu-item:hover {
+    border: 2px solid #fff;
+  }
+
+  ul.menu > li:hover > ul.submenu {
+    display: flex;
+  }
+
+  .submenu-item:last-child {
+    margin-right: 0;
+  }
 }
