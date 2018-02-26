@@ -110,6 +110,7 @@ ul.menu > li:hover > ul.submenu {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 80px;
 }
 .promo-btn {
   text-transform: uppercase;
@@ -123,6 +124,30 @@ ul.menu > li:hover > ul.submenu {
   font-weight: 200;
   font-size: 1.3rem;
   color: var(--main-font-color);
+}
+
+.promo-social-container {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.social-icon:nth-child(1) {
+  background-image: url("../img/instagram-icon.png");
+}
+.social-icon:nth-child(2) {
+  background-image: url("../img/facebook-icon.png");
+}
+.social-icon:nth-child(3) {
+  background-image: url("../img/twitter-icon.png");
 }
 
 @media (min-width: 768px) {
