@@ -7,13 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Online Store</title>
   <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
   <div class="promo-wrapper">
     <header class="main-header">
       <a href="#" class="logo"></a>
-      <div class="menu">
+      <div class="nav-section">
         <ul class="navigation">
           <li class="nav-item">
             <a href="#" class="nav-item-icon">
@@ -36,22 +37,45 @@
               </svg>
             </a>
           </li>
-        </ul>
-        <!--<ul class="burger-menu">
-          <li>
-            <a href="#" class="burger-menu-icon">
-              <svg width="20" height="20">
-                <use href="img/sprite.svg#menu-icon"></use>
-              </svg>
-            </a>
-            <ul class="submenu">
-              <li class="submenu-item"></li>
-            </ul>
+          <li class="nav-item">
+              <button class="js-nav-toggle"></button>
+          
+              <div class="nav nav--hidden nav--visible">
+                <div class="menu-list">
+                  <a class="menu-list-item" href="#">Главная</a>
+                  <a class="menu-list-item" href="#">Доставка</a>
+                  <a class="menu-list-item" href="#">Оплата</a>
+                </div>
+                <div class="menu-social__section">
+                  <a class="social__icon" href="#">FB</a>
+                  <a class="social__icon" href="#">VK</a>
+                </div>
+              </div>
           </li>
-        </ul>-->
+        </ul>
+    
       </div>
     </header>
   </div>
+
+  <script type="text/javascript">
+    function NavToggle({ toggleSelector, navSelector, toggleClass }) {
+      const toggleBtn = document.querySelector(toggleSelector);
+      const nav = document.querySelector(navSelector);
+  
+      const handleNavToggle = evt => {
+        nav.classList.toggle(toggleClass);
+      }
+  
+      toggleBtn.addEventListener('click', handleNavToggle);
+    }
+  
+    new NavToggle({
+      toggleSelector: '.js-nav-toggle',
+      navSelector: '.nav',
+      toggleClass: 'nav--hidden'
+    });
+  </script>
 </body>
 
 </html>
