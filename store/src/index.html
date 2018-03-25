@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Online Store</title>
   <link rel="stylesheet" href="css/styles.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Jura:400,600&amp;subset=cyrillic" rel="stylesheet">
   <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
 
@@ -38,22 +39,35 @@
             </a>
           </li>
           <li class="nav-item">
-              <button class="js-nav-toggle"></button>
-          
-              <div class="nav nav--hidden nav--visible">
-                <div class="menu-list">
-                  <a class="menu-list-item" href="#">Главная</a>
-                  <a class="menu-list-item" href="#">Доставка</a>
-                  <a class="menu-list-item" href="#">Оплата</a>
-                </div>
-                <div class="menu-social__section">
-                  <a class="social__icon" href="#">FB</a>
-                  <a class="social__icon" href="#">VK</a>
-                </div>
+            <button class="js-nav-toggle"></button>
+
+            <div class="nav nav--hidden nav--visible">
+              <div class="menu-list">
+                <a class="menu-list-item" href="#">Главная</a>
+                <a class="menu-list-item" href="#">Доставка</a>
+                <a class="menu-list-item" href="#">Оплата</a>
               </div>
+              <div class="menu-social__section">
+                <a class="social__icon" href="https://www.facebook.com/kl1md?ref=bookmarks">
+                  <svg width="40" height="40">
+                    <use href="/img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+                <a class="social__icon" href="https://t.me/kl1md">
+                  <svg width="40" height="40">
+                    <use href="/img/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+                <a class="social__icon" href="https://www.instagram.com/kl1m.danil/">
+                  <svg width="40" height="40">
+                    <use href="/img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
           </li>
         </ul>
-    
+
       </div>
     </header>
   </div>
@@ -62,14 +76,14 @@
     function NavToggle({ toggleSelector, navSelector, toggleClass }) {
       const toggleBtn = document.querySelector(toggleSelector);
       const nav = document.querySelector(navSelector);
-  
+
       const handleNavToggle = evt => {
         nav.classList.toggle(toggleClass);
       }
-  
+
       toggleBtn.addEventListener('click', handleNavToggle);
     }
-  
+
     new NavToggle({
       toggleSelector: '.js-nav-toggle',
       navSelector: '.nav',

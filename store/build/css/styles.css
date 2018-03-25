@@ -456,12 +456,29 @@ ul {
 	height: 300px;
 	background-color: #ffffff;
 	width: 100%;
+	padding-top: 50px;
+	margin-bottom: 150px;
 }
 
 .menu-list-item {
 	text-decoration: none;
 	color: #212121;
 	text-transform: uppercase;
+	font-family: Jura;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.menu-list-item:last-child {
+	margin-right: 0;
+}
+
+.social__icon {
+	margin-right: 20px;
+}
+
+.social__icon:last-child {
+	margin-right: 0;
 }
 
 @-webkit-keyframes fadeInRight {
