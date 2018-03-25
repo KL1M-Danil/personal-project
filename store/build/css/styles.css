@@ -433,7 +433,6 @@ ul {
 .nav {
 	text-align: center;
 	position: absolute;
-	border: 4px solid black;
 	width: 100%;
 }
 
@@ -442,10 +441,8 @@ ul {
 }
 
 .nav--visible {
-	-webkit-animation-name: fadeInRight;
-	animation-name: fadeInRight;
-	-webkit-animation-duration: 0.3s;
-	animation-duration: 0.3s;
+	-webkit-animation: fadeInRight 0.5s ease-in;
+	animation: fadeInRight 0.5s ease-in;
 	min-height: 100vh;
 	top: 95px;
 	left: 1px;
