@@ -384,7 +384,7 @@ p {
 }
 
 .header-wrapper {
-	min-width: 480px;
+	min-width: 320px;
 }
 
 .main-header {
@@ -503,7 +503,7 @@ p {
 
 .merchandise-wrapper {
 	padding: 10px;
-	min-width: 480px;
+	min-width: 320px;
 }
 
 .merch__cards {
@@ -532,7 +532,7 @@ p {
 
 .merch__title {
 	font-family: Jura;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 700px;
 	margin-top: 0;
 	margin-bottom: 10px;
@@ -540,7 +540,7 @@ p {
 
 .merch--cost {
 	font-family: Jura;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 .merch__icon-buy {
@@ -560,7 +560,7 @@ p {
 }
 
 .copyright {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	font-size: 13px;
 }
 
