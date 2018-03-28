@@ -1,5 +1,6 @@
 .merchandise-wrapper {
   padding: 10px;
+  min-width: 480px;
 }
 
 .merch__cards {
@@ -23,7 +24,6 @@
 .merch__img {
   width: 130px;
   height: 130px;
-  margin: auto;
   margin-bottom: 20px;
 }
 
@@ -51,5 +51,17 @@
     &:nth-child(2n) {
       border-right: 0;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .merch__item {
+    &:nth-child(3n) {
+      border-right: 0;
+    }
+  }
+
+  .merch__item {
+    flex-basis: 33%;
   }
 }

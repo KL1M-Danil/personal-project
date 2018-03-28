@@ -1,0 +1,46 @@
+.footer-wrapper {
+  min-width: 480px;
+  font-family: Montserrat;
+}
+
+.main-footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.copyright {
+  margin-bottom: 10px;
+  font-size: 13px;
+
+  &:first-child {
+    margin: 0;
+  }
+}
+
+.contact-number {
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.devs {
+  font-size: 13px;
+}
+
+.policy-footer {
+  font-size: 13px;
+  background-color: #000000;
+  text-align: center;
+  padding: 20px;
+}
+
+.privacy,
+.terms {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
