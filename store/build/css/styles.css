@@ -552,6 +552,7 @@ p {
 .footer-wrapper {
 	min-width: 320px;
 	font-family: Montserrat;
+	color: #424242;
 }
 
 .main-footer {
@@ -576,6 +577,11 @@ p {
 
 .devs {
 	font-size: 13px;
+}
+
+.dev-link {
+	font-style: italic;
+	color: red;
 }
 
 .policy-footer {
