@@ -12,10 +12,10 @@
 .copyright {
   margin-bottom: 15px;
   font-size: 13px;
+}
 
-  &:first-child {
-    margin: 0;
-  }
+.copyright h4 {
+  margin: 0;
 }
 
 .contact-number {
@@ -48,5 +48,27 @@
 
   &:last-child {
     margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+  }
+
+  .copyright {
+    text-align: left;
+    margin: 0;
+  }
+
+  .policy-footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .privacy {
+    margin-right: 30px;
   }
 }

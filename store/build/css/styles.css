@@ -564,7 +564,7 @@ p {
 	font-size: 13px;
 }
 
-.copyright:first-child {
+.copyright h4 {
 	margin: 0;
 }
 
@@ -610,6 +610,26 @@ p {
 
 .merch__item {
 	flex-basis: 33%;
+}
+
+.main-footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 40px;
+}
+
+.copyright {
+	text-align: left;
+	margin: 0;
+}
+
+.policy-footer {
+	display: flex;
+	justify-content: center;
+}
+
+.privacy {
+	margin-right: 30px;
 }
 
 }
