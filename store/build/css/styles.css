@@ -446,6 +446,13 @@ p {
 	height: 25px;
 	width: 25px;
 	border: 0;
+	-webkit-animation: fadeInRight 0.3s linear;
+	animation: fadeInRight 0.3s linear;
+}
+
+.nav--visible > .js-nav-toggle {
+	-webkit-animation: fadeInRight 0.3s linear;
+	animation: fadeInRight 0.3s linear;
 }
 
 .nav {
@@ -500,6 +507,18 @@ p {
 	margin-right: 0;
 }
 
+.carousel {
+	margin: auto;
+	font-family: Jura;
+	font-size: 30px; /* background-image: url("../img/carousel-background.png");*/
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.carousel__item {
+	text-align: center;
+}
+
 .merchandise-wrapper {
 	padding: 10px;
 	min-width: 320px;
@@ -540,6 +559,7 @@ p {
 .merch--cost {
 	font-family: Jura;
 	font-size: 16px;
+	margin-bottom: 15px;
 }
 
 .merch__icon-buy {
@@ -566,6 +586,10 @@ p {
 
 .copyright h4 {
 	margin: 0;
+}
+
+.copyright h4:before {
+	content: "\00A9";
 }
 
 .contact-number {

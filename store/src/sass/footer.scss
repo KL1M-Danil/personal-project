@@ -18,6 +18,10 @@
   margin: 0;
 }
 
+.copyright h4:before {
+  content: "\00A9";
+}
+
 .contact-number {
   color: #000000;
   font-size: 18px;
