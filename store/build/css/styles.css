@@ -511,13 +511,49 @@ p {
 .carousel {
 	margin: auto;
 	font-family: Jura;
-	font-size: 30px; /* background-image: url("../img/carousel-background.png");*/
+	font-size: 26px; /* background-image: url("../img/carousel-background.png");*/
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .carousel__item {
 	text-align: center;
+}
+
+.slick-arrow {
+	border: 0;
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	z-index: 10;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.slick-arrow:hover {
+	background-color: red;
+}
+
+.slick-prev {
+	bottom: 10px;
+	left: 20px;
+	border-radius: 50%;
+	border-color: red;
+}
+
+.slick-prev:before {
+	content: "<";
+}
+
+.slick-next {
+	bottom: 10px;
+	right: 20px;
+	border-radius: 50%;
+	border-color: red;
+}
+
+.slick-next:before {
+	content: ">";
 }
 
 .merchandise-wrapper {
