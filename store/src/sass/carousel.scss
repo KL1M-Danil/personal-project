@@ -2,6 +2,7 @@
   margin: auto;
   font-family: Jura;
   font-size: 26px;
+  padding: 10px;
 
   /* background-image: url("../img/carousel-background.png");*/
   background-repeat: no-repeat;
@@ -32,6 +33,7 @@
   left: 20px;
   border-radius: 50%;
   border-color: red;
+  background-color: #424242; 
 
   &:before {
     content: "<";

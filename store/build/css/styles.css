@@ -511,7 +511,8 @@ p {
 .carousel {
 	margin: auto;
 	font-family: Jura;
-	font-size: 26px; /* background-image: url("../img/carousel-background.png");*/
+	font-size: 26px;
+	padding: 10px; /* background-image: url("../img/carousel-background.png");*/
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -539,6 +540,7 @@ p {
 	left: 20px;
 	border-radius: 50%;
 	border-color: red;
+	background-color: #424242;
 }
 
 .slick-prev:before {
