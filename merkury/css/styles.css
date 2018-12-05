@@ -1,0 +1,66 @@
+@import url("reset.css");
+@import url("variables.css");
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--main-font-color);
+}
+
+/*----MASTHEAD----*/
+li {
+  list-style: none;
+}
+.promo-wrapper {
+  background-image: url(/img/Graph-bg.png), url(/img/Grid-bg.png),
+    url(/img/background.png);
+  background-repeat: no-repeat;
+  background-position: center, top;
+  background-size: contain, cover, cover;
+  min-height: 1100px;
+}
+
+.promo-container {
+  max-width: 1700px;
+  margin: auto;
+}
+
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  min-height: 135px;
+  align-items: center;
+}
+
+.masthead-menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.menu-items {
+  margin-right: 50px;
+  font-family: roboto;
+}
+
+.menu-items:last-child {
+  margin: 0;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: var(--main-font-color);
+}
+
+.menu-btn {
+  color: var(--third-font-color);
+  text-decoration: none;
+  border: 1px solid var(--third-font-color);
+  border-radius: 30px;
+  padding: 15px 43px;
+}
