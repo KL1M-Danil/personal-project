@@ -11,6 +11,11 @@ a {
   color: var(--main-font-color);
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
 /*----MASTHEAD----*/
 li {
   list-style: none;
@@ -45,7 +50,6 @@ li {
 
 .menu-items {
   margin-right: 50px;
-  font-family: roboto;
 }
 
 .menu-items:last-child {
@@ -63,4 +67,107 @@ li {
   border: 1px solid var(--third-font-color);
   border-radius: 30px;
   padding: 15px 43px;
+}
+
+/*---PROMO---*/
+
+.promo {
+  max-width: 880px;
+  margin: auto;
+  text-align: center;
+  margin-top: 110px;
+}
+
+.promo-title {
+  color: var(--main-font-color);
+  font-size: 60px;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.promo-subtitle {
+  margin-top: 0px;
+  margin-bottom: 90px;
+  color: var(--fourth-font-color);
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.promo-btn {
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid none;
+  border-radius: 30px;
+  padding: 16px 55px;
+  background-color: #5584ff;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.promo-img {
+  box-shadow: 0px 0px 118px 20px rgba(85, 132, 255, 0.37);
+  transform: translate(0, 140px);
+}
+
+/*---SERVICE---*/
+
+.service-wrapper {
+  text-align: center;
+}
+
+.service-box {
+  display: flex;
+  max-width: 1355px;
+  margin: auto;
+  padding-top: 260px;
+  padding-left: 0;
+}
+
+.service-item {
+  justify-content: space-between;
+  max-width: 370px;
+  margin-right: 125px;
+}
+
+.service-item:last-child {
+  margin-right: 0px;
+}
+
+.service-icon {
+  margin-top: 0px;
+  margin-bottom: 55px;
+  max-height: 80px;
+}
+
+.service-line {
+  transform: translate(100px, 40px);
+  position: absolute;
+}
+
+.service-title {
+  margin-top: 0px;
+  margin-bottom: 34px;
+  color: var(--second-font-color);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.service-text {
+  margin-top: 0px;
+  margin-bottom: 55px;
+  color: var(--fourth-font-color);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.service-btn {
+  margin: 0;
+  margin-bottom: 0;
+  color: var(--second-font-color);
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid var(--fourth-font-color);
+  border-radius: 30px;
+  padding: 17px 85px;
 }
