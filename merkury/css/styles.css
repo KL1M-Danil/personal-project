@@ -24,13 +24,13 @@ li {
   background-image: url(/img/Graph-bg.png), url(/img/Grid-bg.png),
     url(/img/background.png);
   background-repeat: no-repeat;
-  background-position: center, top;
+  background-position: center, top, center;
   background-size: contain, cover, cover;
   min-height: 1100px;
 }
 
 .promo-container {
-  max-width: 1700px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -118,7 +118,7 @@ li {
 
 .service-box {
   display: flex;
-  max-width: 1355px;
+  max-width: 1200px;
   margin: auto;
   padding-top: 260px;
   padding-left: 0;
@@ -169,5 +169,73 @@ li {
   font-weight: 700;
   border: 1px solid var(--fourth-font-color);
   border-radius: 30px;
-  padding: 17px 85px;
+  padding: 15px 85px;
+}
+
+/*----NEEDS----*/
+
+.needs-wrapper {
+  display: flex;
+  margin-left: 20%;
+  max-width: 1735px;
+  padding-top: 220px;
+}
+
+.need-info {
+  max-width: 20%;
+}
+
+.needs-title {
+  margin: 0;
+  margin-bottom: 60px;
+  color: var(--second-font-color);
+  font-size: 60px;
+  font-weight: 100;
+}
+
+.needs-checklist {
+  padding: 0;
+}
+
+.needs-text {
+  margin: 0;
+  margin-bottom: 45px;
+  color: var(--fourth-font-color);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.needs-checklist__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.checklist-icon {
+  height: 30px;
+}
+
+.checklist-title {
+  margin: 0;
+  margin-left: 20px;
+  color: var(--third-font-color);
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.needs-img {
+  max-width: 60%;
+  max-height: 630px;
+}
+
+@media (max-width: 768px) {
+  .promo-wrapper {
+    min-height: 600px;
+    background-size: contain, contain, cover;
+    background-position: center;
+  }
+
+  .promo-img {
+    display: none;
+  }
 }
