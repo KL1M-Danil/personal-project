@@ -239,3 +239,62 @@ li {
     display: none;
   }
 }
+
+/*-----TASKS-----*/
+
+.tasks-wrapper {
+  min-height: 752px;
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  background-image: url(/img/Graph-bg.png), url(/img/Grid-bg.png),
+    url(/img/background.png);
+  background-repeat: no-repeat;
+  background-position: center, top, center;
+  background-size: contain, cover, cover;
+}
+
+.tasks-item {
+  color: var(--main-font-color);
+  font-size: 31px;
+  font-weight: 500;
+}
+
+.tasks-status {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.task {
+  height: 210px;
+}
+
+.tasks-drop {
+  border: 1px dashed var(--fourth-font-color);
+  padding: 38px 148px;
+  color: var(--fourth-font-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.task-description {
+  margin-left: 175px;
+  max-width: 530px;
+  padding-top: 60px;
+}
+
+.task-name {
+  margin: 0;
+  margin-bottom: 45px;
+  color: var(--main-font-color);
+  font-size: 60px;
+  font-weight: 100;
+}
+
+.task-text {
+  margin: 0;
+  margin-bottom: 40px;
+  color: var(--fourth-font-color);
+  font-size: 18px;
+  font-weight: 400;
+}
