@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+
+}
+
+body {
+  color: #ffffff;
+  font-family: "Exo 2", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}

@@ -1,3 +1,52 @@
-@import './normalize';
+@import "./normalize";
+@import "./base";
+@import url("https://fonts.googleapis.com/css?family=Staatliches");
 
+.promo-wrapper {
+  background-image: url("/images/macbook.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
 
+.promo-container {
+  max-width: 1320px;
+  margin: auto;
+  text-align: center;
+}
+
+.promo-title {
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-top: 40px;
+}
+
+.promo-subtitle {
+  font-weight: 300;
+  margin: 0 5% 10px 5%;
+}
+
+.promo-text {
+  font-weight: 300;
+  margin: 0 10% 10px 10%;
+  color: red;
+}
+
+@media (min-width: 676px) {
+  .promo-wrapper {
+    background-size: cover;
+  }
+
+  .promo-container {
+    text-align: right;
+  }
+
+  .promo-title {
+    margin-right: 10%;
+  }
+
+  .promo-subtitle {
+    margin-right: 10%;
+  }
+}
