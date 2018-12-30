@@ -58,25 +58,40 @@ var delay = anime({
   duration: 3000
 });
 
-var delay1 = anime({
+var delay = anime({
   targets: "#promo-subtitle",
   opacity: 1,
   delay: 1500,
   duration: 3000
 });
 
-var delay2 = anime({
+var delay = anime({
   targets: "#promo-text",
   opacity: 1,
   delay: 2500,
   duration: 3000
 });
 
-var delay3 = anime({
+var delay = anime({
   targets: "#review-item",
   opacity: 1,
   delay: 3000,
   duration: 3000
+});
+
+var cssProperties = anime({
+  targets: "#cert-box",
+  opacity: 1,
+  delay: 3500,
+  duration: 3000
+});
+
+var cssProperties = anime({
+  targets: "#social-link",
+  scale: 1.2,
+  delay: 2000,
+  duration: 1000,
+  loop: true
 });
 
 //Заявка

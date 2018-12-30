@@ -1,5 +1,6 @@
 @import "./normalize";
 @import "./base";
+@import "./promo-text";
 @import "./page";
 @import url("https://fonts.googleapis.com/css?family=Staatliches");
 
@@ -13,7 +14,7 @@
 .promo-wrapper {
   max-width: 1320px;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .promo-title {
@@ -61,8 +62,9 @@
   height: 100px;
   border-radius: 25px 25px 0 0;
   text-align: center;
-  border: 1px solid red;
+  border: 2px solid red;
   border-bottom: none;
+  
 }
 
 .review-logo {
@@ -109,6 +111,7 @@
   width: 260px;
   margin: auto;
   padding-bottom: 40px;
+  opacity: 0.1;
 }
 
 .cert-head {
@@ -116,9 +119,10 @@
   height: 180px;
   border-radius: 25px 25px 0 0;
   text-align: center;
-  border: 1px solid red;
+  border: 2px solid red;
   border-bottom: none;
   padding: 27px 27px 0 27px;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .cert-img {
