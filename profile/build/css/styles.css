@@ -8,6 +8,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+@import url("https://rsms.me/inter/inter-ui.css");
+
 @import url("https://fonts.googleapis.com/css?family=Staatliches");
 
 html {
@@ -408,17 +410,136 @@ ul {
   padding-left: 0;
 }
 
-.promo-wrapper {
-  background-image: url("/images/macbook.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
+::-moz-selection {
+  background: #2D2F36;
+}
+
+::selection {
+  background: #2D2F36;
+}
+
+::-webkit-selection {
+  background: #2D2F36;
+}
+
+::-moz-selection {
+  background: #2D2F36;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  height: 320px;
+  margin: 0 auto;
+  width: 640px;
+}
+
+.left {
+  background: white;
+  height: calc(100% - 40px);
+  top: 20px;
+  position: relative;
+  width: 50%;
+  border-radius: 25px 25px 0 0;
+  border: 1px solid red;
+}
+
+.login {
+  font-size: 32px;
+  font-weight: 900;
+  margin: 50px 40px 40px;
+  color: black;
+}
+
+.eula {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 40px;
+}
+
+.right {
+  background: #1a1a1a;
+  box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 0.22);
+  color: #F1F1F2;
+  position: relative;
+  width: 50%;
+}
+
+svg {
+  position: absolute;
+  width: 320px;
+}
+
+path {
+  fill: none;
+  stroke: url(#linearGradient);
+  stroke-width: 4;
+  stroke-dasharray: 240 1386;
+}
+
+.form-input {
+  margin: 40px;
+  position: absolute;
+}
+
+label {
+  color: #c2c2c5;
+  display: block;
+  font-size: 14px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+input,
+button {
+  background: transparent;
+  border: 0;
+  color: #f2f2f2;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+}
+
+#submit {
+  color: #707075;
+  margin-top: 40px;
+  transition: color 300ms;
+}
+
+#submit:focus {
+  color: #f2f2f2;
+}
+
+#submit:active {
+  color: #d0d0d2;
 }
 
 .promo-container {
+  background-image: url("/images/macbook.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+}
+
+.promo-wrapper {
   max-width: 1320px;
   margin: auto;
-  text-align: center;
+  margin-bottom: 40px;
 }
 
 .promo-title {
@@ -426,17 +547,74 @@ ul {
   margin: 0;
   margin-bottom: 15px;
   padding-top: 40px;
+  text-align: center;
+  opacity: 0;
 }
 
 .promo-subtitle {
   font-weight: 300;
   margin: 0 5% 10px 5%;
+  text-align: center;
+  opacity: 0;
 }
 
 .promo-text {
   font-weight: 300;
   margin: 0 10% 10px 10%;
-  color: red;
+  color: #ff0000;
+  text-align: center;
+  opacity: 0;
+}
+
+.review-box {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.review-item {
+  max-width: 180px;
+  margin: auto;
+  margin-bottom: 20px;
+  opacity: 0.1;
+}
+
+.review-item:last-child {
+  margin-bottom: 0;
+}
+
+.review-head {
+  position: relative;
+  height: 100px;
+  border-radius: 25px 25px 0 0;
+  text-align: center;
+  border: 1px solid red;
+  border-bottom: none;
+}
+
+.review-logo {
+  height: 80px;
+  padding: 15px 15px 0 15px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.review-title {
+  padding-left: 10px;
+  margin: 0;
+  color: black;
+}
+
+.review-body {
+  position: relative;
+  height: 30px;
+  background: #fff;
+  border-radius: 0 0 25px 25px;
+  padding: 5px;
+}
+
+.social-box {
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .social-link {
@@ -445,22 +623,211 @@ ul {
   padding: 10px;
   width: 50px;
   margin-bottom: 15px;
+  border: 2px solid transparent;
+}
+
+.social-link:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  border: 3px solid red;
+  transition: 0.4s;
+}
+
+.cert-box {
+  width: 260px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.cert-head {
+  position: relative;
+  height: 180px;
+  border-radius: 25px 25px 0 0;
+  text-align: center;
+  border: 1px solid red;
+  border-bottom: none;
+  padding: 27px 27px 0 27px;
+}
+
+.cert-img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.cert-img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transition: 0.4s;
+}
+
+.cert-body {
+  position: relative;
+  height: 30px;
+  background: #fff;
+  border-radius: 0 0 25px 25px;
+  padding: 5px;
+}
+
+.cert-title {
+  padding-left: 10px;
+  margin: 0;
+  color: black;
+}
+
+/*----POPUP----*/
+
+.success {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  color: black;
+  text-align: center;
+}
+
+.active {
+  display: block;
+}
+
+.popup {
+  position: absolute;
+  width: 350px;
+  height: 130px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  background-color: #fff;
+}
+
+.close-popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.close-popup:before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  left: -4px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.close-popup:after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: -4px;
 }
 
 @media (min-width: 676px) {
   .promo-wrapper {
     background-size: cover;
-  }
-
-  .promo-container {
-    text-align: right;
+    margin-bottom: 100px;
   }
 
   .promo-title {
-    margin-right: 10%;
+    text-align: center;
   }
 
   .promo-subtitle {
-    margin-right: 10%;
+    text-align: center;
+  }
+
+  .promo-text {
+    text-align: center;
+  }
+
+  .review-wrapper {
+    margin-bottom: 100px;
+  }
+
+  .review-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .review-item {
+    margin: 0;
+    margin-right: 60px;
+  }
+
+  .review-item:last-child {
+    margin: 0;
+  }
+
+  .social-box {
+    margin-bottom: 100px;
+  }
+
+  .social-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-item {
+    margin: 0;
+    margin-right: 60px;
+  }
+
+  .social-item:last-child {
+    margin: 0;
+  }
+}
+
+@media (min-width: 767px) {
+  .left {
+    background: white;
+    height: calc(100% - 40px);
+    top: 20px;
+    position: relative;
+    width: 50%;
+    border-radius: 25px 0 0 25px;
+    border: 1px solid red;
+  }
+}
+
+@media (max-width: 767px) {
+  .form {
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    height: 630px;
+    width: 320px;
+  }
+
+  .left {
+    height: 100%;
+    left: 20px;
+    width: calc(100% - 40px);
+    max-height: 270px;
+  }
+
+  .right {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
   }
 }
