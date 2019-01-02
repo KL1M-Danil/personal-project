@@ -66,18 +66,18 @@ var delay = anime({
 });
 
 var delay = anime({
-  targets: "#promo-text",
+  targets: "#promo-anim",
   opacity: 1,
   delay: 2500,
   duration: 3000
 });
 
-var delay = anime({
-  targets: "#review-item",
-  opacity: 1,
-  delay: 3000,
-  duration: 3000
-});
+// var delay = anime({
+//   targets: "#review-item",
+//   opacity: 1,
+//   delay: 3000,
+//   duration: 3000
+// });
 
 var cssProperties = anime({
   targets: "#cert-box",

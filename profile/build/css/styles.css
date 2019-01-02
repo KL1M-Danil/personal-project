@@ -410,15 +410,18 @@ ul {
   padding-left: 0;
 }
 
+.promo-anim {
+  opacity: 0;
+  text-transform: uppercase;
+}
+
 .content {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  height: 160px;
+  margin: auto;
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  width: 350px;
   overflow: hidden;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 35px;
   color: red;
 }
@@ -688,27 +691,32 @@ input::-moz-focus-inner {
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 40px;
+  padding-bottom: 40px;
+  min-height: 80vh;
+  -webkit-transform-style: inherit;
+  transform-style: inherit;
 }
 
 .promo-wrapper {
   max-width: 1320px;
   margin: auto;
-  margin-bottom: 80px;
+  padding-top: 120px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .promo-title {
-  font-weight: 300;
-  margin: 0;
+  font-size: 36px;
+  font-weight: 500;
+  margin: auto;
   margin-bottom: 15px;
-  padding-top: 40px;
-  text-align: center;
+  width: 90%;
   opacity: 0;
 }
 
 .promo-subtitle {
   font-weight: 300;
   margin: 0 5% 10px 5%;
-  text-align: center;
   opacity: 0;
 }
 
@@ -716,7 +724,6 @@ input::-moz-focus-inner {
   font-weight: 300;
   margin: 0 10% 10px 10%;
   color: #ff0000;
-  text-align: center;
   opacity: 0;
 }
 
@@ -725,11 +732,20 @@ input::-moz-focus-inner {
   margin-bottom: 40px;
 }
 
+.review-name {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: black;
+}
+
 .review-item {
   max-width: 180px;
   margin: auto;
-  margin-bottom: 20px;
-  opacity: 0.1;
+  margin-bottom: 30px;
+  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
 }
 
 .review-item:last-child {
@@ -763,6 +779,7 @@ input::-moz-focus-inner {
   height: 30px;
   background: #fff;
   border-radius: 0 0 25px 25px;
+  border-top: 2px solid #c2c2c5;
   padding: 5px;
 }
 
@@ -771,12 +788,24 @@ input::-moz-focus-inner {
   text-align: center;
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  margin-right: 15px;
+}
+
+.social-item:last-child {
+  margin: 0;
+}
+
 .social-link {
   background-color: #ffffff;
   border-radius: 50%;
   padding: 10px;
   width: 50px;
-  margin-bottom: 15px;
   border: 2px solid transparent;
 }
 
@@ -788,21 +817,21 @@ input::-moz-focus-inner {
 }
 
 .cert-box {
-  width: 260px;
+  width: 160px;
   margin: auto;
-  padding-bottom: 40px;
   opacity: 0.1;
+  box-shadow: 0 0 40px 16px rgba(0, 0, 0, 0.22);
+  border-radius: 25px;
 }
 
 .cert-head {
   position: relative;
-  height: 180px;
+  height: 100px;
   border-radius: 25px 25px 0 0;
   text-align: center;
   border: 2px solid red;
   border-bottom: none;
-  padding: 27px 27px 0 27px;
-  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px 20px 0 20px;
 }
 
 .cert-img {
@@ -894,9 +923,14 @@ input::-moz-focus-inner {
 }
 
 @media (min-width: 676px) {
+  .promo-container {
+    min-height: 90vh;
+  }
+
   .promo-wrapper {
     background-size: cover;
     margin-bottom: 100px;
+    padding-top: 150px;
   }
 
   .promo-title {
@@ -931,11 +965,6 @@ input::-moz-focus-inner {
 
   .social-box {
     margin-bottom: 100px;
-  }
-
-  .social-list {
-    display: flex;
-    justify-content: center;
   }
 
   .social-item {
@@ -991,12 +1020,6 @@ input::-moz-focus-inner {
 
 @media (max-width: 676px) {
   .content {
-    position: absolute;
-    top: 43%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    height: 160px;
     width: 80%;
     overflow: hidden;
     font-size: 16px;

@@ -1,11 +1,14 @@
+.promo-anim {
+  opacity: 0;
+  text-transform: uppercase;
+}
+
 .content {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 160px;
+  margin: auto;
+  transform: translate(-0%, -0%);
+  width: 350px;
   overflow: hidden;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 35px;
   color: red;
 
@@ -224,11 +227,6 @@
 
 @media (max-width: 676px) {
   .content {
-    position: absolute;
-    top: 43%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 160px;
     width: 80%;
     overflow: hidden;
     font-size: 16px;
@@ -239,7 +237,6 @@
       font-weight: 500;
       height: 30px;
     }
-
 
     &:after,
     &:before {
