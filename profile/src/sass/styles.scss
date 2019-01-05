@@ -108,10 +108,24 @@
   border-bottom: none;
 }
 
+.review-head:hover .review-logo{
+  filter: grayscale(0%);
+  transition: 0.5s;
+}
+
+.review-head-merkury {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 .review-logo {
   height: 80px;
   padding: 15px 15px 0 15px;
   filter: grayscale(100%);
+}
+
+.review-logo-merkury {
+  height: 70px;
+  padding: 30px 15px 0 15px;
 }
 
 .review-title {
