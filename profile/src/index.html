@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-131916965-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-131916965-1");
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -11,10 +26,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Klimenko Web Developer" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta
-      name="msapplication-TileImage"
-      content="images/favicons/144x144.png"
-    />
+    <meta name="msapplication-TileImage" content="/images/favicon.png" />
     <meta name="msapplication-TileColor" content="#000000" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
@@ -31,21 +43,7 @@
   <body>
     <div class="promo-container">
       <div class="promo-wrapper">
-        <hr
-          size="2px"
-          width="100px"
-          align="left"
-          class="promo-line-left"
-          color="red"
-        />
-        <hr
-          size="2px"
-          width="100px"
-          align="left"
-          class="promo-line-right"
-          color="red"
-        />
-        <img src="/images/kl1m.png" alt="author" class="promo-img" />
+        <img src="/images/kl1m-45deg.png" alt="author" class="promo-img" />
 
         <h1 class="promo-title" id="promo-title">
           Приветствую! Я, Даниил Клименко – web-developer
@@ -54,9 +52,6 @@
         <h3 class="promo-subtitle" id="promo-subtitle">
           В моем арсенале такие навыки: HTML5, CSS3, JS, SCSS, SASS
         </h3>
-        <!-- <p class="promo-text" id="promo-text">
-          Mobile first CSS, Responsive design, Bootstrap 4, Methodology BEM
-        </p> -->
         <div class="promo-anim" id="promo-anim">
           <div class="content">
             <div class="content__container">
@@ -83,7 +78,7 @@
             <img src="/images/cert.png" alt="certificate" class="cert-img" />
           </div>
           <div class="cert-body">
-            <spam class="cert-title">My certificate</spam>
+            <span class="cert-title">My certificate</span>
           </div>
         </a>
       </div>
@@ -92,31 +87,27 @@
     <div class="review-wrapper">
       <h3 class="review-name">Мои работы</h3>
       <ul class="review-box">
-        <li class="review-item" id="review-item">
-         <a href="https://rtk.in.ua" target="_blank">
-          <div class="review-head ">
-            <img src="/images/logo.png" alt="x" class="review-logo" />
-          </div>
-          <div class="review-body">
-            <spam class="review-title">rtk.in.ua</spam>
-          </div>
-         </a>
-        </li>
-        <li class="review-item" id="review-item">
-          <div class="review-head ">
-            <img src="/images/logo.png" alt="x" class="review-logo" />
-          </div>
-          <div class="review-body">
-            <spam class="review-title">rtk.in.ua</spam>
-          </div>
-        </li>
-        <li class="review-item" id="review-item">
-          <a href="http://merkury.zzz.com.ua/" target="_blank">
-            <div class="review-head review-head-merkury">
-              <img src="/images/logo-merkury.png" alt="x" class="review-logo review-logo-merkury" />
+        <li class="review-item">
+          <a href="https://rtk.in.ua" target="_blank">
+            <div class="review-head ">
+              <img src="/images/logo.png" alt="logo-rtk" class="review-logo" />
             </div>
             <div class="review-body">
-              <spam class="review-title">merkury.com.ua</spam>
+              <span class="review-title">rtk.in.ua</span>
+            </div>
+          </a>
+        </li>
+        <li class="review-item">
+          <a href="http://merkury.kl1m.pro/" target="_blank">
+            <div class="review-head review-head-merkury">
+              <img
+                src="/images/logo-merkury.png"
+                alt="logo-merkury"
+                class="review-logo review-logo-merkury"
+              />
+            </div>
+            <div class="review-body">
+              <span class="review-title">merkury.com.ua</span>
             </div>
           </a>
         </li>
@@ -125,7 +116,7 @@
 
     <form class="form">
       <input type="hidden" name="project_name" value="Site" />
-      <input type="hidden" name="admin_email" value="elita.dkv@gmail.com" />
+      <input type="hidden" name="admin_email" value="kl1m.done@gmail.com" />
       <input type="hidden" name="form_subject" value="Заявка" />
       <div class="container">
         <div class="left">
@@ -138,7 +129,6 @@
           <svg viewBox="0 0 320 300">
             <defs>
               <linearGradient
-                inkscape:collect="always"
                 id="linearGradient"
                 x1="13"
                 y1="193.49992"
@@ -146,7 +136,7 @@
                 y2="193.49992"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop style="stop-color:#ff00ff;" offset="0" id="stop876" />
+                <stop style="stop-color:#FFFFFF;" offset="0" id="stop876" />
                 <stop style="stop-color:#ff0000;" offset="1" id="stop878" />
               </linearGradient>
             </defs>
@@ -157,8 +147,13 @@
           <div class="form-input">
             <label for="email">Ваш email</label>
             <input type="email" name="email" id="email" />
-            <label for="password" name="Текст">Сообщение</label>
-            <input type="password" name="text" id="password" />
+            <label for="text">Сообщение</label>
+            <input
+              type="text"
+              name="text"
+              id="text"
+              placeholder="Привет, я хочу сайт!"
+            />
 
             <button id="submit" value="Submit">Отправить</button>
           </div>
@@ -175,13 +170,13 @@
 
     <div class="social-box">
       <ul class="social-list">
-        <li class="social-item" id="social-link">
+        <li class="social-item">
           <a href="https://t.me/kl1md" class="social-link" target="_blank">
             <img src="/images/telegram.png" alt="telegram"
           /></a>
         </li>
 
-        <li class="social-item" id="social-link">
+        <li class="social-item">
           <a
             href="https://www.facebook.com/kl1md"
             class="social-link"
@@ -190,7 +185,7 @@
             <img src="/images/facebook.png" alt="facebook"
           /></a>
         </li>
-        <li class="social-item" id="social-link">
+        <li class="social-item">
           <a
             href="viber://chat?number=+380955616691"
             class="social-link"

@@ -18,7 +18,7 @@ document.querySelector("#email").addEventListener("focus", function (e) {
     }
   });
 });
-document.querySelector("#password").addEventListener("focus", function (e) {
+document.querySelector("#text").addEventListener("focus", function (e) {
   if (current) current.pause();
   current = anime({
     targets: "path",
@@ -80,14 +80,14 @@ var cssProperties = anime({
   opacity: 1,
   delay: 3500,
   duration: 3000
-});
-var cssProperties = anime({
-  targets: "#social-link",
-  scale: 1.2,
-  delay: 2000,
-  duration: 1000,
-  loop: true
-}); //Заявка
+}); // var cssProperties = anime({
+//   targets: "#social-link",
+//   scale: 1.2,
+//   delay: 2000,
+//   duration: 1000,
+//   loop: true
+// });
+//Заявка
 
 $("body form.form").submit(function () {
   var th = $(this);

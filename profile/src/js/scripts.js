@@ -16,7 +16,7 @@ document.querySelector("#email").addEventListener("focus", function(e) {
     }
   });
 });
-document.querySelector("#password").addEventListener("focus", function(e) {
+document.querySelector("#text").addEventListener("focus", function(e) {
   if (current) current.pause();
   current = anime({
     targets: "path",
@@ -86,13 +86,13 @@ var cssProperties = anime({
   duration: 3000
 });
 
-var cssProperties = anime({
-  targets: "#social-link",
-  scale: 1.2,
-  delay: 2000,
-  duration: 1000,
-  loop: true
-});
+// var cssProperties = anime({
+//   targets: "#social-link",
+//   scale: 1.2,
+//   delay: 2000,
+//   duration: 1000,
+//   loop: true
+// });
 
 //Заявка
 

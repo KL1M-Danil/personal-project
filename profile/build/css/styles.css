@@ -700,7 +700,7 @@ input::-moz-focus-inner {
 .promo-wrapper {
   max-width: 1320px;
   margin: auto;
-  padding-top: 120px;
+  padding-top: 130px;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -715,22 +715,15 @@ input::-moz-focus-inner {
 }
 
 .promo-img {
-  width: 250px;
+  width: 150px;
   margin: auto;
-  margin-bottom: 30px;
   -webkit-filter: grayscale(10%);
   filter: grayscale(10%);
-}
-
-.promo-line-left {
-  position: absolute;
-  top: 240px;
-}
-
-.promo-line-right {
-  position: absolute;
-  top: 240px;
-  left: 80%;
+  border: 2px solid red;
+  border-radius: 45px;
+  -webkit-transform: rotate(-45deg) translateY(-30px) translateX(30px);
+  transform: rotate(-45deg) translateY(-30px) translateX(30px);
+  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.3);
 }
 
 .promo-img::before {
@@ -803,7 +796,7 @@ input::-moz-focus-inner {
 
 .review-logo {
   height: 80px;
-  padding: 15px 15px 0 15px;
+  padding: 25px 15px 0 15px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
@@ -975,19 +968,11 @@ input::-moz-focus-inner {
   .promo-wrapper {
     background-size: cover;
     margin-bottom: 100px;
-    padding-top: 100px;
+    padding-top: 180px;
   }
 
-  .promo-line-left {
-    position: absolute;
-    top: 210px;
-    left: 33%;
-  }
-
-  .promo-line-right {
-    position: absolute;
-    top: 210px;
-    left: 60%;
+  .promo-img {
+    width: 200px;
   }
 
   .promo-title {

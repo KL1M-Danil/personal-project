@@ -1,5 +1,6 @@
 @import url("resets.css");
 @import url("variables.css");
+@import url("media.css");
 
 html {
   box-sizing: border-box;
@@ -20,6 +21,7 @@ body {
 li {
   list-style: none;
 }
+
 .promo-wrapper {
   background-image: url(/img/Graph-bg.png), url(/img/Grid-bg.png),
     url(/img/background.png);
@@ -27,6 +29,7 @@ li {
   background-position: center, top, center;
   background-size: contain, cover, cover;
   min-height: 1100px;
+  width: 100%;
 }
 
 .promo-container {
@@ -148,7 +151,6 @@ li {
 .service-item {
   justify-content: space-between;
   max-width: 370px;
-  margin-right: 125px;
 }
 
 .service-item:last-child {
@@ -204,9 +206,7 @@ li {
 
 .needs-wrapper {
   display: flex;
-  margin-left: 20%;
   max-width: 1735px;
-  padding-top: 220px;
 }
 
 .need-info {
@@ -257,17 +257,6 @@ li {
   max-height: 630px;
 }
 
-@media (max-width: 768px) {
-  .promo-wrapper {
-    min-height: 600px;
-    background-size: contain, contain, cover;
-    background-position: center;
-  }
-
-  .promo-img {
-    display: none;
-  }
-}
 
 /*-----TASKS-----*/
 
@@ -341,8 +330,6 @@ li {
 .review-notes {
   background-image: url("/img/review.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1200px;
   height: 680px;
   padding-top: 100px;
 }
@@ -367,7 +354,6 @@ li {
   text-align: left;
   font-size: 24px;
   font-weight: 700;
-  margin-right: 50%;
   margin-bottom: 30px;
   margin-top: 0;
   padding-bottom: 15px;
@@ -377,10 +363,6 @@ li {
 .review-name-left::after {
   content: "";
   position: absolute;
-  width: 30px;
-  height: 30px;
-  left: 50%;
-  transform: translate(0, 33px);
   border-radius: 50%;
   background-color: #5584ff;
   animation: radial-pulse 1s infinite;
@@ -388,19 +370,14 @@ li {
 
 .review-note-text-left {
   text-align: left;
-  font-size: 18px;
-  line-height: 30px;
   font-weight: 400;
-  width: 15%;
   color: var(--fourth-font-color);
-  margin-bottom: 140px;
 }
 
 .review-name-right {
   text-align: right;
   font-size: 24px;
   font-weight: 700;
-  margin-left: 54%;
   margin-bottom: 30px;
   margin-top: 0;
   padding-bottom: 15px;
@@ -410,10 +387,6 @@ li {
 .review-name-right::after {
   content: "";
   position: absolute;
-  width: 30px;
-  height: 30px;
-  right: 46%;
-  transform: translate(0, 33px);
   border-radius: 50%;
   background-color: #5584ff;
   animation: radial-pulse 1s infinite;
@@ -421,10 +394,7 @@ li {
 
 .review-note-text-right {
   text-align: right;
-  font-size: 18px;
-  line-height: 30px;
   font-weight: 400;
-  margin-left: 85%;
   color: var(--fourth-font-color);
 }
 
@@ -460,8 +430,6 @@ li {
 
 .plan-item {
   text-align: center;
-  margin-right: 85px;
-  padding: 45px 52px;
   box-shadow: 0px 0px 30px 10px #f4f4f5;
 }
 
@@ -586,7 +554,6 @@ li {
 .footer-item {
   font-size: 18px;
   font-weight: 400;
-  margin-right: 50px;
 }
 
 .footer-item a {
