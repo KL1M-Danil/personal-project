@@ -1,4 +1,23 @@
 @media (max-width: 768px) {
+  .masthead {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 48, 0.5);
+  }
+
+  .masthead-menu {
+    align-items: flex-end;
+  }
+
+  .masthead-logo {
+    width: 40%;
+    margin-left: 5%;
+  }
+
+  .menu-items {
+    display: none;
+  }
+
   .promo-wrapper {
     min-height: 600px;
     background-size: contain, contain, cover;
@@ -6,16 +25,28 @@
     width: 100%;
   }
 
+  .promo {
+    padding-top: 220px;
+  }
+
   .promo-img {
     display: none;
+  }
+
+  .promo-btn {
+    margin-bottom: 100px;
   }
 
   .service-box {
     display: flex;
     flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
   }
 
   .service-item {
+    margin: auto;
     margin-bottom: 50px;
   }
 
@@ -29,17 +60,41 @@
   }
 
   .needs-info {
-      width: 90%;
-      margin: auto;
+    width: 90%;
+    margin: auto;
   }
 
   .needs-img {
     display: none;
   }
 
+  .tasks-wrapper {
+    flex-wrap: wrap;
+  }
+
+
+  .task-name {
+    padding-top: 30px;
+  }
+
+  .tasks-list {
+    margin: auto;
+  }
+
+  .task-drop {
+    height: 130px;
+   
+  }
+
+  .task-description {
+    width: 90%;
+  }
+
   .review-notes {
     background-position: center;
     background-size: 370px;
+    width: 90%;
+    margin: auto;
   }
 
   .review-name-left {
@@ -63,7 +118,7 @@
     line-height: 15px;
     font-weight: 400;
     width: 35%;
-    margin-bottom: 120px;
+    margin-bottom: 150px;
   }
 
   .review-name-right {
@@ -107,11 +162,11 @@
   }
 
   .footer-social {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .footer-menu {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .footer-list {
@@ -121,18 +176,108 @@
   }
 
   .footer-item {
-      margin-bottom: 15px;
+    margin-bottom: 15px;
   }
 }
 
 @media (min-width: 769px) {
+  .promo-wrapper {
+    min-height: 1100px;
+    width: 100%;
+  }
+
+  .promo-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .promo {
+    padding-top: 100px;
+  }
+
+  .masthead {
+    display: flex;
+    justify-content: space-between;
+    min-height: 135px;
+    align-items: center;
+  }
+
+  .masthead-menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  .menu-items {
+    margin-right: 50px;
+  }
+
+  .menu-items:last-child {
+    margin: 0;
+  }
+
+  .menu-link {
+    text-decoration: none;
+    color: var(--main-font-color);
+    border-bottom: 2px solid transparent;
+    padding: 15px 0;
+  }
+
+  .menu-link:hover {
+    border-bottom: 2px solid var(--third-font-color);
+    transition: 0.2s;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .menu-btn {
+    color: var(--third-font-color);
+    text-decoration: none;
+    border: 1px solid var(--third-font-color);
+    border-radius: 30px;
+    padding: 15px 43px;
+  }
+
+  .menu-btn:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    transition: 0.4s;
+  }
+
+  .service-box {
+    padding-top: 260px;
+  }
+
   .service-item {
     margin-right: 125px;
+  }
+
+  .service-item:last-child {
+    margin-right: 0px;
   }
 
   .needs-wrapper {
     margin-left: 20%;
     padding-top: 220px;
+  }
+
+  .task {
+    height: 210px;
+  }
+
+  .tasks-drop {
+    padding: 38px 148px;
+  }
+
+  .task-description {
+    margin-left: 70px;
+  }
+
+  .review-text {
+    padding-bottom: 90px;
   }
 
   .review-notes {
@@ -178,6 +323,16 @@
     border-radius: 50%;
     background-color: #5584ff;
     animation: radial-pulse 1s infinite;
+  }
+
+  .review-note-text-right {
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    width: 15%;
+    margin-left: 85%;
+    margin-bottom: 140px;
   }
 
   .plan-item {

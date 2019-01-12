@@ -28,7 +28,6 @@ li {
   background-repeat: no-repeat;
   background-position: center, top, center;
   background-size: contain, cover, cover;
-  min-height: 1100px;
   width: 100%;
 }
 
@@ -40,8 +39,7 @@ li {
 .masthead {
   display: flex;
   justify-content: space-between;
-  min-height: 135px;
-  align-items: center;
+  padding: 30px 0;
 }
 
 .masthead-menu {
@@ -51,8 +49,24 @@ li {
   align-items: center;
 }
 
-.menu-items {
-  margin-right: 50px;
+.masthead-menu-open {
+  flex-direction: column;
+  text-align: right;
+  padding-top: 50px;
+}
+
+.menu-icon {
+  margin-right: 5%;
+  color: var(--third-font-color);
+  line-height: 53px;
+}
+
+.menu-item-open {
+  display: inline;
+}
+
+.logo-img {
+  width: 100%;
 }
 
 .menu-items:last-child {
@@ -91,7 +105,7 @@ li {
   max-width: 880px;
   margin: auto;
   text-align: center;
-  margin-top: 110px;
+ 
 }
 
 .promo-title {
@@ -117,7 +131,6 @@ li {
   border-radius: 30px;
   padding: 16px 55px;
   background-color: #5584ff;
-  margin-bottom: 0;
   margin-top: 0;
 }
 
@@ -144,17 +157,12 @@ li {
   display: flex;
   max-width: 1200px;
   margin: auto;
-  padding-top: 260px;
   padding-left: 0;
 }
 
 .service-item {
   justify-content: space-between;
   max-width: 370px;
-}
-
-.service-item:last-child {
-  margin-right: 0px;
 }
 
 .service-icon {
@@ -257,19 +265,22 @@ li {
   max-height: 630px;
 }
 
-
 /*-----TASKS-----*/
 
-.tasks-wrapper {
-  min-height: 752px;
-  padding-top: 150px;
-  display: flex;
-  justify-content: center;
+.tasks-container {
   background-image: url(/img/Graph-bg.png), url(/img/Grid-bg.png),
     url(/img/background.png);
   background-repeat: no-repeat;
   background-position: center, top, center;
   background-size: contain, cover, cover;
+}
+
+.tasks-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
 }
 
 .tasks-item {
@@ -284,21 +295,19 @@ li {
 }
 
 .task {
-  height: 210px;
+  height: 150px;
 }
 
 .tasks-drop {
   border: 1px dashed var(--fourth-font-color);
-  padding: 38px 148px;
+  padding: 20px 90px;
   color: var(--fourth-font-color);
   font-size: 20px;
   font-weight: 500;
 }
 
 .task-description {
-  margin-left: 175px;
   max-width: 530px;
-  padding-top: 60px;
 }
 
 .task-name {
@@ -321,7 +330,7 @@ li {
 /*-----REVIEW-----*/
 
 .review-wrapper {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
   text-align: center;
   padding-top: 100px;
@@ -346,7 +355,7 @@ li {
   line-height: 30px;
   width: 70%;
   margin: auto;
-  padding-bottom: 90px;
+
   color: var(--fourth-font-color);
 }
 
@@ -530,7 +539,7 @@ li {
 .footer {
   color: var(--fourth-font-color);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 1470px;
   margin: auto;
   padding: 70px 0;

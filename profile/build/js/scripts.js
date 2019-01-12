@@ -68,26 +68,36 @@ var delay = anime({
   opacity: 1,
   delay: 2500,
   duration: 3000
-}); // var delay = anime({
-//   targets: "#review-item",
-//   opacity: 1,
-//   delay: 3000,
-//   duration: 3000
-// });
-
+});
 var cssProperties = anime({
   targets: "#cert-box",
   opacity: 1,
   delay: 3500,
   duration: 3000
-}); // var cssProperties = anime({
-//   targets: "#social-link",
-//   scale: 1.2,
-//   delay: 2000,
-//   duration: 1000,
-//   loop: true
-// });
+});
+var nav = document.querySelector(".nav-toggle");
+var navList = document.querySelector(".nav");
+var navLink = document.querySelectorAll(".nav-link");
+var navLinkA = document.querySelectorAll(".nav-link a");
+nav.addEventListener("click", onNavClick);
+
+function onNavClick(event) {
+  event.preventDefault();
+  nav.classList.toggle("open");
+  navList.classList.toggle("nav-open");
+
+  for (var i = 0; i < navLink.length; i += 1) {
+    navLink[i].classList.toggle("nav-link-open");
+  }
+} // for (let i = 0; i < navLinkA.length; i += 1) {
+//   navLinkA[i].addEventListener("click", onNavLinkAClick);
+//   function onNavLinkAClick(event) {
+//     event.preventDefault();
+//     navList.classList.toggle("nav-open");
+//   }
+// }
 //Заявка
+
 
 $("body form.form").submit(function () {
   var th = $(this);
@@ -116,4 +126,22 @@ $(document).mouseup(function (e) {
   if (e.target != popup[0] && popup.has(e.target).length === 0) {
     $(".js-overlay-thank-you").fadeOut();
   }
-});
+}); //Плавность якорей
+
+$(document).ready(function () {
+  //ID блока с ссылками #prime_nav
+  $("#tech, #review").on("click", "a", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault(); //забираем идентификатор бока с атрибута href
+
+    var id = $(this).attr("href"),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+    top = $(id).offset().top; //анимируем переход на расстояние - top за 1200 мс
+
+    $("body,html").animate({
+      scrollTop: top
+    }, 1200);
+  });
+}); //При обновление страници наверх
+
+window.scrollTo(0, 0);

@@ -37,11 +37,29 @@
       href="https://fonts.googleapis.com/css?family=Exo+2:300,400,700"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/styles.min.css" />
   </head>
 
   <body>
     <div class="promo-container">
+      <header class="header">
+        <img src="images/logo-kl1m.png" alt="logo" class="logo" />
+        <ul class="nav" id="nav">
+          <li class="nav-link"><a href="#tech">Услуги</a></li>
+          <li class="nav-link"><a href="#review">Работы</a></li>
+          <li class="nav-link"><a href="#contacts">Контакты</a></li>
+        </ul>
+        <div class="nav-toggle">
+          <div class="hamburger"><span></span> <span></span> <span></span></div>
+          <div class="cross"><span></span> <span></span></div>
+        </div>
+      </header>
       <div class="promo-wrapper">
         <img src="/images/kl1m-45deg.png" alt="author" class="promo-img" />
 
@@ -57,9 +75,7 @@
             <div class="content__container">
               <ul class="content__container__list">
                 <li class="content__container__list__item">Mobile first CSS</li>
-                <li class="content__container__list__item">
-                  Responsive design
-                </li>
+                <li class="content__container__list__item">Adaptive design</li>
                 <li class="content__container__list__item">Bootstrap 4 Grid</li>
                 <li class="content__container__list__item">Methodology BEM</li>
               </ul>
@@ -84,7 +100,73 @@
       </div>
     </div>
 
-    <div class="review-wrapper">
+    <div class="tech-wrapper" id="tech">
+      <div class="tech-box">
+        <h3 class="tech-name">Landing page</h3>
+        <p class="tech-text">
+          <b>Лэндинг</b> это интернет-страница, направленная на побуждение
+          пользователя совершить какое-либо действие: подписаться на рассылку,
+          купить продукт, скачать софт
+        </p>
+        <ul class="tech-list">
+          <li class="tech-item">
+            <p class="tech-item-name">
+              сосредоточенность пользователя на одном действии (цели)
+            </p>
+          </li>
+          <li class="tech-item">
+            <i class="fas fa-plus-circle"></i>
+            <p class="tech-item-name">
+              увеличение числа потенциальных потребителей
+            </p>
+          </li>
+          <li class="tech-item">
+            <i class="fas fa-plus-circle"></i>
+            <p class="tech-item-name">
+              усиление эффективности рекламной кампании
+            </p>
+          </li>
+          <li class="tech-item">
+            <i class="fas fa-plus-circle"></i>
+            <p class="tech-item-name">
+              относительно невысокая стоимость разработки
+            </p>
+          </li>
+        </ul>
+        <img
+          src="https://www.livechatinc.com/wp-content/uploads/2016/03/how-to-create-a-landing-page@2x.png"
+          alt=""
+          class="tech-img"
+        />
+      </div>
+
+      <div class="tech-box">
+        <h3 class="tech-name">Адаптивный сайт</h3>
+        <p class="tech-text">
+          <b>Это сайт</b>, который на мониторе отображается одним образом, на
+          планшете иначе, а на смартфоне — снова по-другому. Меняется
+          расположение блоков, размеры кнопок и полей, текстов.
+          <b>Зачем?</b> Чтобы пользователю было комфортнее пользоваться сайтом:
+        </p>
+        <ul class="tech-list">
+          <li class="tech-item">
+            <i class="fas fa-plus-circle"></i>
+            <p class="tech-item-name">
+              в кнопку легче попадать пальцем, если она крупная
+            </p>
+          </li>
+          <li class="tech-item">
+            <i class="fas fa-plus-circle"></i>
+            <p class="tech-item-name">
+              текст в метро легче читать, если он 20 пунктов, а не 14
+            </p>
+          </li>
+        </ul>
+        <img src="/images/adaptive-design.png" alt="" class="tech-img" />
+      </div>
+    </div>
+
+    <div class="review-wrapper" id="review">
       <h3 class="review-name">Мои работы</h3>
       <ul class="review-box">
         <li class="review-item">
@@ -95,13 +177,17 @@
             <div class="review-body">
               <span class="review-title">rtk.in.ua</span>
             </div>
+            <div class="review-bottom">
+              <p class="review-title">- адаптивный дизайн</p>
+              <p class="review-title">- 3 версии сайта</p>
+            </div>
           </a>
         </li>
         <li class="review-item">
           <a href="http://merkury.kl1m.pro/" target="_blank">
             <div class="review-head review-head-merkury">
               <img
-                src="/images/logo-merkury.png"
+                src="/images/Logo-merkury.png"
                 alt="logo-merkury"
                 class="review-logo review-logo-merkury"
               />
@@ -109,94 +195,103 @@
             <div class="review-body">
               <span class="review-title">merkury.com.ua</span>
             </div>
+            <div class="review-bottom">
+              <p class="review-title">- адаптивный дизайн</p>
+              <p class="review-title">- 3 версии сайта</p>
+            </div>
           </a>
         </li>
       </ul>
     </div>
 
-    <form class="form">
-      <input type="hidden" name="project_name" value="Site" />
-      <input type="hidden" name="admin_email" value="kl1m.done@gmail.com" />
-      <input type="hidden" name="form_subject" value="Заявка" />
-      <div class="container">
-        <div class="left">
-          <div class="login">Оставьте заявку</div>
-          <div class="eula">
-            Я с вами свяжусь и мы обсудим ваш будущий сайт!
-          </div>
-        </div>
-        <div class="right">
-          <svg viewBox="0 0 320 300">
-            <defs>
-              <linearGradient
-                id="linearGradient"
-                x1="13"
-                y1="193.49992"
-                x2="307"
-                y2="193.49992"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop style="stop-color:#FFFFFF;" offset="0" id="stop876" />
-                <stop style="stop-color:#ff0000;" offset="1" id="stop878" />
-              </linearGradient>
-            </defs>
-            <path
-              d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143"
-            />
-          </svg>
-          <div class="form-input">
-            <label for="email">Ваш email</label>
-            <input type="email" name="email" id="email" />
-            <label for="text">Сообщение</label>
-            <input
-              type="text"
-              name="text"
-              id="text"
-              placeholder="Привет, я хочу сайт!"
-            />
+    <div class="contact-wrapper" id="contacts">
+      <h3 class="contact-title">Мои контакты</h3>
+      <div class="social-box">
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://t.me/kl1md" class="social-link" target="_blank">
+              <img src="/images/telegram.png" alt="telegram"
+            /></a>
+          </li>
 
-            <button id="submit" value="Submit">Отправить</button>
-          </div>
-        </div>
+          <li class="social-item">
+            <a
+              href="https://www.facebook.com/kl1md"
+              class="social-link"
+              target="_blank"
+            >
+              <img src="/images/facebook.png" alt="facebook"
+            /></a>
+          </li>
+          <li class="social-item">
+            <a
+              href="viber://chat?number=+380955616691"
+              class="social-link"
+              target="_blank"
+            >
+              <img src="/images/viber.png" alt="viber"
+            /></a>
+          </li>
+        </ul>
       </div>
-    </form>
 
-    <div class="success js-overlay-thank-you">
-      <div class="popup js-thank-you">
-        <h2>Спасибо!</h2>
-        <div class="close-popup js-close-thank-you"></div>
+      <form class="form">
+        <input type="hidden" name="project_name" value="Site" />
+        <input type="hidden" name="admin_email" value="kl1m.done@gmail.com" />
+        <input type="hidden" name="form_subject" value="Заявка" />
+        <div class="container">
+          <div class="left">
+            <div class="login">Оставьте заявку</div>
+            <div class="eula">
+              Я с вами свяжусь и мы обсудим ваш будущий сайт!
+            </div>
+          </div>
+          <div class="right">
+            <svg viewBox="0 0 320 300">
+              <defs>
+                <linearGradient
+                  id="linearGradient"
+                  x1="13"
+                  y1="193.49992"
+                  x2="307"
+                  y2="193.49992"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop style="stop-color:#FFFFFF;" offset="0" id="stop876" />
+                  <stop style="stop-color:#ff0000;" offset="1" id="stop878" />
+                </linearGradient>
+              </defs>
+              <path
+                d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143"
+              />
+            </svg>
+            <div class="form-input">
+              <label for="email">Ваш email</label>
+              <input type="email" name="email" id="email" />
+              <label for="text">Сообщение</label>
+              <input
+                type="text"
+                name="text"
+                id="text"
+                placeholder="Привет, я хочу сайт!"
+              />
+
+              <button id="submit" value="Submit">Отправить</button>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div class="success js-overlay-thank-you">
+        <div class="popup js-thank-you">
+          <h2>Спасибо!</h2>
+          <div class="close-popup js-close-thank-you"></div>
+        </div>
       </div>
     </div>
 
-    <div class="social-box">
-      <ul class="social-list">
-        <li class="social-item">
-          <a href="https://t.me/kl1md" class="social-link" target="_blank">
-            <img src="/images/telegram.png" alt="telegram"
-          /></a>
-        </li>
-
-        <li class="social-item">
-          <a
-            href="https://www.facebook.com/kl1md"
-            class="social-link"
-            target="_blank"
-          >
-            <img src="/images/facebook.png" alt="facebook"
-          /></a>
-        </li>
-        <li class="social-item">
-          <a
-            href="viber://chat?number=+380955616691"
-            class="social-link"
-            target="_blank"
-          >
-            <img src="/images/viber.png" alt="viber"
-          /></a>
-        </li>
-      </ul>
-    </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    
   </body>
 </html>
