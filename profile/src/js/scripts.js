@@ -49,6 +49,14 @@ document.querySelector("#submit").addEventListener("focus", function(e) {
   });
 });
 
+$(document).ready(function() {
+  $(".section").slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 3
+  });
+});
+
 //Aнимация
 
 var delay = anime({
@@ -106,6 +114,14 @@ function onNavClick(event) {
 //     navList.classList.toggle("nav-open");
 //   }
 // }
+
+$(document).ready(function() {
+  $(".tech-slider").slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1
+  });
+});
 
 //Заявка
 

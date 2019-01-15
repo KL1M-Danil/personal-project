@@ -25,7 +25,7 @@
     <meta name="copyright" content="Klimenko Danil" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Klimenko Web Developer" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
     <meta name="msapplication-TileImage" content="/images/favicon.png" />
     <meta name="msapplication-TileColor" content="#000000" />
     <meta name="format-detection" content="telephone=no" />
@@ -37,19 +37,15 @@
       href="https://fonts.googleapis.com/css?family=Exo+2:300,400,700"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="css/styles.min.css" />
   </head>
 
   <body>
     <div class="promo-container">
       <header class="header">
-        <img src="images/logo-kl1m.png" alt="logo" class="logo" />
+        <div class="rotate-shadows">
+          <img src="images/logo-kl1m.png" alt="logo" class="logo" />
+        </div>
         <ul class="nav" id="nav">
           <li class="nav-link"><a href="#tech">Услуги</a></li>
           <li class="nav-link"><a href="#review">Работы</a></li>
@@ -110,24 +106,25 @@
         </p>
         <ul class="tech-list">
           <li class="tech-item">
+            <img src="/images/plus-icon.png" alt="" />
             <p class="tech-item-name">
               сосредоточенность пользователя на одном действии (цели)
             </p>
           </li>
           <li class="tech-item">
-            <i class="fas fa-plus-circle"></i>
+            <img src="/images/plus-icon.png" alt="" />
             <p class="tech-item-name">
               увеличение числа потенциальных потребителей
             </p>
           </li>
           <li class="tech-item">
-            <i class="fas fa-plus-circle"></i>
+            <img src="/images/plus-icon.png" alt="" />
             <p class="tech-item-name">
               усиление эффективности рекламной кампании
             </p>
           </li>
           <li class="tech-item">
-            <i class="fas fa-plus-circle"></i>
+            <img src="/images/plus-icon.png" alt="" />
             <p class="tech-item-name">
               относительно невысокая стоимость разработки
             </p>
@@ -145,18 +142,20 @@
         <p class="tech-text">
           <b>Это сайт</b>, который на мониторе отображается одним образом, на
           планшете иначе, а на смартфоне — снова по-другому. Меняется
-          расположение блоков, размеры кнопок и полей, текстов.
-          <b>Зачем?</b> Чтобы пользователю было комфортнее пользоваться сайтом:
+          расположение блоков, размеры кнопок и полей, текстов. <br /><b
+            >Зачем?</b
+          >
+          Чтобы пользователю было комфортнее пользоваться сайтом:
         </p>
         <ul class="tech-list">
           <li class="tech-item">
-            <i class="fas fa-plus-circle"></i>
+            <img src="/images/plus-icon.png" alt="" />
             <p class="tech-item-name">
               в кнопку легче попадать пальцем, если она крупная
             </p>
           </li>
           <li class="tech-item">
-            <i class="fas fa-plus-circle"></i>
+            <img src="/images/plus-icon.png" alt="" />
             <p class="tech-item-name">
               текст в метро легче читать, если он 20 пунктов, а не 14
             </p>
@@ -168,38 +167,73 @@
 
     <div class="review-wrapper" id="review">
       <h3 class="review-name">Мои работы</h3>
-      <ul class="review-box">
-        <li class="review-item">
-          <a href="https://rtk.in.ua" target="_blank">
-            <div class="review-head ">
-              <img src="/images/logo.png" alt="logo-rtk" class="review-logo" />
-            </div>
-            <div class="review-body">
-              <span class="review-title">rtk.in.ua</span>
-            </div>
-            <div class="review-bottom">
-              <p class="review-title">- адаптивный дизайн</p>
-              <p class="review-title">- 3 версии сайта</p>
-            </div>
-          </a>
+      <ul class="card-box">
+        <li class="card">
+          <header class="card__thumb">
+            <a href="https://rtk.in.ua" target="_blank">
+              <img src="/images/logo.png" />
+            </a>
+          </header>
+          <div class="card__body">
+            <div class="card__category"><a href="#">complete</a></div>
+            <h2 class="card__title">
+              <a href="https://rtk.in.ua" target="_blank">rtk.in.ua</a>
+            </h2>
+            <div class="card__subtitle">Логистическая компания</div>
+
+            <ul class="card__description">
+              <li>
+                <img src="/images/responsive.png" alt="" />
+                <span>адаптивный дизайн</span>
+              </li>
+              <li>
+                <img src="/images/logo-label.png" alt="" />
+                <span>создание логотипа</span>
+              </li>
+              <li>
+                <img src="/images/research.png" alt="" />
+                <span>подключение аналитики</span>
+              </li>
+              <li>
+                <img src="/images/form.png" alt="" />
+                <span>сложная форма заявки</span>
+              </li>
+              <li>
+                <img src="/images/email.png" alt="" />
+                <span>отправка формы на почту</span>
+              </li>
+            </ul>
+          </div>
         </li>
-        <li class="review-item">
-          <a href="http://merkury.kl1m.pro/" target="_blank">
-            <div class="review-head review-head-merkury">
-              <img
-                src="/images/Logo-merkury.png"
-                alt="logo-merkury"
-                class="review-logo review-logo-merkury"
-              />
-            </div>
-            <div class="review-body">
-              <span class="review-title">merkury.com.ua</span>
-            </div>
-            <div class="review-bottom">
-              <p class="review-title">- адаптивный дизайн</p>
-              <p class="review-title">- 3 версии сайта</p>
-            </div>
-          </a>
+
+        <li class="card">
+          <header class="card__thumb">
+            <a href="http://merkury.kl1m.pro/" target="_blank">
+              <img src="/images/Logo-merkury.png" />
+            </a>
+          </header>
+          <div class="card__body">
+            <div class="card__category"><a href="#">beta</a></div>
+            <h2 class="card__title">
+              <a href="http://merkury.kl1m.pro/" target="_blank">merkury.com</a>
+            </h2>
+            <div class="card__subtitle">Аналитическая компания</div>
+
+            <ul class="card__description">
+              <li>
+                <img src="/images/responsive.png" alt="" />
+                <span>адаптивный дизайн</span>
+              </li>
+              <li>
+                <img src="/images/logo-label.png" alt="" />
+                <span>создание логотипа</span>
+              </li>
+              <li>
+                <img src="/images/research.png" alt="" />
+                <span>подключение аналитики</span>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </div>
@@ -207,32 +241,28 @@
     <div class="contact-wrapper" id="contacts">
       <h3 class="contact-title">Мои контакты</h3>
       <div class="social-box">
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://t.me/kl1md" class="social-link" target="_blank">
-              <img src="/images/telegram.png" alt="telegram"
-            /></a>
-          </li>
+        <a href="https://t.me/kl1md" class="social-item" target="_blank">
+          <img src="/images/telegram.png" alt="telegram" class="social-link" />
+          <h4 class="social-name">telegram</h4>
+        </a>
 
-          <li class="social-item">
-            <a
-              href="https://www.facebook.com/kl1md"
-              class="social-link"
-              target="_blank"
-            >
-              <img src="/images/facebook.png" alt="facebook"
-            /></a>
-          </li>
-          <li class="social-item">
-            <a
-              href="viber://chat?number=+380955616691"
-              class="social-link"
-              target="_blank"
-            >
-              <img src="/images/viber.png" alt="viber"
-            /></a>
-          </li>
-        </ul>
+        <a
+          href="https://www.facebook.com/kl1md"
+          class="social-item"
+          target="_blank"
+        >
+          <img src="/images/facebook.png" alt="facebook" class="social-link" />
+          <h4 class="social-name">facebook</h4>
+        </a>
+
+        <a
+          href="viber://chat?number=+380955616691"
+          class="social-item"
+          target="_blank"
+        >
+          <img src="/images/viber.png" alt="viber" class="social-link" />
+          <h4 class="social-name">viber</h4>
+        </a>
       </div>
 
       <form class="form">
@@ -291,7 +321,9 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="slick/slick.min.js" />
+    <link rel="stylesheet" href="slick/slick-theme.scss" />
+    <script src="slick/slick.min.js"></script>
     <script src="js/scripts.min.js"></script>
-    
   </body>
 </html>
