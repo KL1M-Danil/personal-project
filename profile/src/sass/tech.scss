@@ -3,7 +3,16 @@
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+}
+
+.tech-title-main {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: $main-font-color;
+  width: 100%;
 }
 
 .tech-box {
@@ -24,12 +33,19 @@
   }
 }
 
+.tech-box ul i{
+    content: '\2022';
+    width: 10px;
+    height: 10px;
+}
+
 .tech-box-main {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  color: black;
-  min-width: 360px;
+  flex-wrap: wrap;
+  color: $main-font-color;
+  min-width: 320px;
 }
 
 .tech-box-mini {
@@ -49,8 +65,11 @@
   flex-direction: column;
 }
 
-.tech-part span {
-  font-size: 18px;
+.tech-part ul li {
+  font-size: 16px;
+  list-style-type: disc;
+  margin-left: 18px;
+  margin-bottom: 10px;
 }
 
 .tech-box-mini span {
@@ -58,6 +77,7 @@
 }
 
 .tech-title {
+  font-size: 18px;
   flex-basis: 100%;
   margin: 0;
   margin-bottom: 30px;
@@ -65,14 +85,20 @@
 
 .tech-price {
   font-weight: 700;
+  text-align: right;
 }
 
 .tech-name {
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
-  color: black;
+  color: $main-font-color;
+}
+
+.tech-name b {
+  font-weight: 100;
+  font-size: 18px;
 }
 
 .tech-text {
@@ -82,7 +108,7 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
-  color: black;
+  color: $main-font-color;
   text-align: left;
 }
 
@@ -91,7 +117,7 @@
 }
 
 .tech-list {
-  color: black;
+  color: $main-font-color;
   margin-bottom: 20px;
 }
 
@@ -116,6 +142,19 @@
   filter: grayscale(100%);
 }
 
+.tech-box-btn {
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.tech-btn {
+  background-color: $accent-color;
+  border-radius: 25px;
+  padding: 15px 30px;
+  color: $second-font-color;
+}
+
 @media (min-width: 676px) {
   .tech-wrapper {
     justify-content: space-around;
@@ -138,13 +177,17 @@
     margin-bottom: 0;
   }
 
+  .tech-part span {
+    font-size: 18px;
+  }
+
   .tech-box .tech-text {
     text-align: justify;
     font-size: 18px;
   }
 
   .tech-name {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .tech-item-name {

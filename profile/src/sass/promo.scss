@@ -2,10 +2,11 @@
   background-image: url("/images/macbook.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
   min-height: 80vh;
   transform-style: inherit;
+ 
 }
 
 .promo-wrapper {
@@ -14,6 +15,7 @@
   padding-top: 150px;
   margin-bottom: 50px;
   text-align: center;
+  
 }
 
 .header {
@@ -40,7 +42,7 @@
 
     span {
       display: block;
-      background: black;
+      background: $accent-color;
       border-radius: 2px;
       transition: 0.25s ease-in-out;
       width: 30px;
@@ -68,7 +70,7 @@
     left: 10px;
     span {
       display: block;
-      background: red;
+      background: $accent-color;
       border-radius: 2px;
       transition: 0.25s ease-in-out;
       &:nth-child(1) {
@@ -127,6 +129,7 @@
 .logo {
   width: 130px;
   height: 45px;
+  padding-bottom: 5px;
 }
 
 .promo-title {
@@ -142,7 +145,7 @@
   width: 150px;
   margin: auto;
   filter: grayscale(10%);
-  border: 2px solid red;
+  border: 2px solid $accent-color;
   border-radius: 45px;
   transform: rotate(-45deg) translateY(-30px) translateX(30px);
   box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.3);
@@ -177,7 +180,7 @@
   overflow: hidden;
   font-size: 18px;
   line-height: 35px;
-  color: red;
+  color: $accent-color;
 
   &__container {
     font-weight: 500;
@@ -201,7 +204,7 @@
       position: absolute;
       top: 0;
 
-      color: red;
+      color: $accent-color;
       font-size: 32px;
       line-height: 35px;
 
@@ -405,7 +408,7 @@
   height: 100px;
   border-radius: 25px 25px 0 0;
   text-align: center;
-  border: 2px solid red;
+  border: 2px solid $accent-color;
   border-bottom: none;
   padding: 15px 20px 0 20px;
   //background-color: rgba(0, 0, 0, 0.7);
@@ -431,7 +434,7 @@
 .cert-title {
   padding-left: 10px;
   margin: 0;
-  color: black;
+  color: $main-font-color;
 }
 
 .promo-text {
@@ -445,7 +448,7 @@
   .header {
     position: fixed;
     width: 100%;
-    background-color: white;
+    background-color: $second-font-color;
     z-index: 2;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
   }
@@ -464,11 +467,12 @@
     font-size: 0;
     text-transform: uppercase;
     margin-bottom: 15px;
+    margin-right: 15px;
   }
 
   .nav-link a {
-    color: red;
-    font-weight: 600;
+    color: $accent-color;
+    font-weight: 400;
   }
 
   .nav-link-open {
@@ -488,7 +492,7 @@
     overflow: hidden;
     font-size: 16px;
     line-height: 35px;
-    color: red;
+    color: $accent-color;
 
     &__container {
       font-weight: 500;
@@ -550,14 +554,14 @@
   .nav-link a {
     font-size: 20px;
     font-weight: 700;
-    color: red;
+    color: $accent-color;
     text-transform: uppercase;
-    padding-bottom: 10px;
-    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
   }
 
   .nav-link a:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid $second-font-color;
     transition: 0.3s;
   }
 

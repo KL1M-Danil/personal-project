@@ -49,15 +49,15 @@ document.querySelector("#submit").addEventListener("focus", function(e) {
   });
 });
 
-$(document).ready(function() {
-  $(".section").slick({
+$(document).ready(function(){
+  $('.section').slick({
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 3
+  slidesToShow: 1,
+  slidesToScroll: 3
   });
 });
 
-//Aнимация
+//Aнимация появления блоков
 
 var delay = anime({
   targets: "#promo-title",
@@ -115,13 +115,14 @@ function onNavClick(event) {
 //   }
 // }
 
-$(document).ready(function() {
-  $(".tech-slider").slick({
+$(document).ready(function(){
+  $('.tech-slider').slick({
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1
   });
 });
+		
 
 //Заявка
 
@@ -166,7 +167,7 @@ $(document).mouseup(function(e) {
 
 $(document).ready(function() {
   //ID блока с ссылками #prime_nav
-  $("#tech, #review").on("click", "a", function(event) {
+  $("#to-tech").on("click", "a", function(event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
 

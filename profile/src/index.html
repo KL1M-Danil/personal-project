@@ -16,6 +16,25 @@
       gtag("config", "UA-131916965-1");
     </script>
 
+    <!-- Разметка JSON-LD, созданная Мастером разметки структурированных данных Google. -->
+    <script type="application/ld+json">
+      {
+        "@context" : "http://schema.org",
+        "@type" : "Product",
+        "name" : "Landing page",
+        "image" : "https://www.livechatinc.com/wp-content/uploads/2016/03/how-to-create-a-landing-page@2x.png",
+        "description" : "Лендинг</B> это интернет-страница, направленная на побуждение пользователя совершить какое-либо действие: подписаться на рассылку, купить продукт, скачать софт",
+        "brand" : {
+          "@type" : "Brand",
+          "name" : "Лендинги"
+        },
+        "offers" : {
+          "@type" : "Offer",
+          "price" : "от 80$"
+        }
+      }
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -43,11 +62,11 @@
   <body>
     <div class="promo-container">
       <header class="header">
-        <div class="rotate-shadows">
-          <img src="images/logo-kl1m.png" alt="logo" class="logo" />
-        </div>
+        <a href="#"
+          ><img src="images/logo-kl1m.png" alt="logo" class="logo"
+        /></a>
         <ul class="nav" id="nav">
-          <li class="nav-link"><a href="#tech">Услуги</a></li>
+          <li class="nav-link"><a href="#tech" id="to-tech">Разработка</a></li>
           <li class="nav-link"><a href="#review">Работы</a></li>
           <li class="nav-link"><a href="#contacts">Контакты</a></li>
         </ul>
@@ -87,7 +106,7 @@
           target="_blank"
         >
           <div class="cert-head">
-            <img src="/images/cert.png" alt="certificate" class="cert-img" />
+            <img src="/images/cert-1.png" alt="certificate" class="cert-img" />
           </div>
           <div class="cert-body">
             <span class="cert-title">My certificate</span>
@@ -97,6 +116,7 @@
     </div>
 
     <div class="tech-wrapper" id="tech">
+      <h3 class="tech-title-main">Разработка</h3>
       <div class="tech-box">
         <h3 class="tech-name">Landing page</h3>
         <p class="tech-text">
@@ -104,7 +124,7 @@
           пользователя совершить какое-либо действие: подписаться на рассылку,
           купить продукт, скачать софт
         </p>
-        <ul class="tech-list">
+        <!-- <ul class="tech-list">
           <li class="tech-item">
             <img src="/images/plus-icon.png" alt="" />
             <p class="tech-item-name">
@@ -134,20 +154,46 @@
           src="https://www.livechatinc.com/wp-content/uploads/2016/03/how-to-create-a-landing-page@2x.png"
           alt=""
           class="tech-img"
-        />
+        /> -->
+        <h3 class="tech-name">Сайт визитка</h3>
+        <p class="tech-text">
+          Это своего рода <b>виртуальная</b> визитная карточка: небольшой сайт с
+          информацией, которая позволяет получить представление о деятельности
+          компании либо персоны.
+        </p>
+        <h3 class="tech-name">Интернет-магазин</h3>
+        <p class="tech-text">
+          Интернет-магазин — не корпоративный сайт, который можно рекомендовать
+          практически всем компаниям. Интернет-магазин в первую очередь полезен
+          владельцам стандартизированных товаров и услуг. Вторая группа
+          потенциальных владельцев Интернет-магазинов — компании, занимающиеся
+          традиционной розничной коммерцией.
+        </p>
       </div>
 
       <div class="tech-box ">
-        <h3 class="tech-name">Адаптивный сайт</h3>
-        <p class="tech-text">
-          <b>Это сайт</b>, который на мониторе отображается одним образом, на
-          планшете иначе, а на смартфоне — снова по-другому. Меняется
-          расположение блоков, размеры кнопок и полей, текстов. <br /><b
-            >Зачем?</b
-          >
-          Чтобы пользователю было комфортнее пользоваться сайтом:
-        </p>
-        <ul class="tech-list">
+        <h3 class="tech-name">
+          О технологиях<br />
+          <b>которые я использую</b>
+        </h3>
+
+        <ul>
+          <i> </i>
+          <li class="tech-text">
+            <b>БЭМ.</b> Методология БЭМ создана в Яндексе для разработки сайтов,
+            которые надо делать быстро, а поддерживать долгие годы. Она
+            позволяет создавать расширяемые и повторно используемые компоненты
+            интерфейса.
+          </li>
+          <li class="tech-text">
+            <b>REM вместо PX.</b> При изменении размера шрифта элемента для
+            разных экранов все элементы на странице масштабируются
+            пропорционально. Т. е. не теряется соотношение между размером букв,
+            отступами в блоке, расстоянием между блоками и т. д.
+          </li>
+        </ul>
+
+        <!-- <ul class="tech-list">
           <li class="tech-item">
             <img src="/images/plus-icon.png" alt="" />
             <p class="tech-item-name">
@@ -161,105 +207,185 @@
             </p>
           </li>
         </ul>
-        <img src="/images/adaptive-design.png" alt="" class="tech-img" />
+        <img src="/images/adaptive-design-1.png" alt="" class="tech-img" /> -->
       </div>
 
       <div class="tech-box tech-box-main">
         <div class="tech-box-mini">
-          <h3 class="tech-title">Разработка:</h3>
+          <h3 class="tech-title">Услуги:</h3>
           <div class="tech-part">
-            <span>Лендинги</span> <span>Интернет-магазины</span>
+            <span>Лендинги</span><span>Сайт визитка</span>
+            <span>Интернет-магазины</span>
           </div>
           <div class="tech-part">
-            <span class="tech-price">от 80$</span> <span class="tech-price">от 100$</span>
+            <span class="tech-price">от 80$</span>
+            <span class="tech-price">от 60$</span>
+            <span class="tech-price">от 100$</span>
           </div>
         </div>
 
         <div class="tech-box-mini">
           <h3 class="tech-title">Дополнительные услуги:</h3>
           <div class="tech-part">
-            <span>Создание логотипа</span>
-            <span>Отправка заявки на вашу почту</span>
-            <span>Подключение Google Analytics</span>
+          
+            <ul>
+              <li>Создание логотипа</li>
+              <li>Отправка заявки на вашу почту</li>
+              <li>Подключение Google Analytics</li>
+            </ul>
           </div>
-          <div class="tech-part">
-            <span class="tech-price">20$</span> <span class="tech-price">10$</span> <span class="tech-price">10$</span> 
-          </div>
+          <!-- <div class="tech-part">
+            <span class="tech-price">Design</span>
+            <span class="tech-price">Back-end</span>
+            <span class="tech-price">SEO</span>
+          </div> -->
+        </div>
+        <div class="tech-box-btn">
+          <a href="#form" class="tech-btn">Просчитать ваш будущий сайт</a>
         </div>
       </div>
     </div>
 
-    <div class="review-wrapper" id="review">
-      <h3 class="review-name">Мои работы</h3>
-      <ul class="card-box">
-        <li class="card">
-          <header class="card__thumb">
-            <a href="https://rtk.in.ua" target="_blank">
-              <img src="/images/logo.png" />
-            </a>
-          </header>
-          <div class="card__body">
-            <div class="card__category"><a href="#">complete</a></div>
-            <h2 class="card__title">
-              <a href="https://rtk.in.ua" target="_blank">rtk.in.ua</a>
-            </h2>
-            <div class="card__subtitle">Логистическая компания</div>
+    <div class="review-container">
+      <div class="review-wrapper" id="review">
+        <h3 class="review-name">Мои работы</h3>
+        <ul class="card-box">
+          <li class="card">
+            <header class="card__thumb">
+              <a href="https://rtk.in.ua" target="_blank">
+                <img src="/images/logo.png" />
+              </a>
+            </header>
+            <div class="card__body">
+              <div class="card__category"><a href="#">complete</a></div>
+              <h2 class="card__title">
+                <a href="https://rtk.in.ua" target="_blank">rtk.in.ua</a>
+              </h2>
+              <div class="card__subtitle">Логистическая компания</div>
+              <img src="/images/down-arrow.png" alt="" class="card__icon" />
 
-            <ul class="card__description">
-              <li>
-                <img src="/images/responsive.png" alt="" />
-                <span>адаптивный дизайн</span>
-              </li>
-              <li>
-                <img src="/images/logo-label.png" alt="" />
-                <span>создание логотипа</span>
-              </li>
-              <li>
-                <img src="/images/research.png" alt="" />
-                <span>подключение аналитики</span>
-              </li>
-              <li>
-                <img src="/images/form.png" alt="" />
-                <span>сложная форма заявки</span>
-              </li>
-              <li>
-                <img src="/images/email.png" alt="" />
-                <span>отправка формы на почту</span>
-              </li>
-            </ul>
-          </div>
-        </li>
+              <ul class="card__description">
+                <li>
+                  <img src="/images/responsive.png" alt="" />
+                  <span>адаптивный дизайн</span>
+                </li>
+                <li>
+                  <img src="/images/logo-label.png" alt="" />
+                  <span>создание логотипа</span>
+                </li>
 
-        <li class="card">
-          <header class="card__thumb">
-            <a href="http://merkury.kl1m.pro/" target="_blank">
-              <img src="/images/Logo-merkury.png" />
-            </a>
-          </header>
-          <div class="card__body">
-            <div class="card__category"><a href="#">beta</a></div>
-            <h2 class="card__title">
-              <a href="http://merkury.kl1m.pro/" target="_blank">merkury.com</a>
-            </h2>
-            <div class="card__subtitle">Аналитический сервис</div>
+                <li>
+                  <img src="/images/form.png" alt="" />
+                  <span>сложная форма заявки</span>
+                </li>
+                <li>
+                  <img src="/images/email.png" alt="" />
+                  <span>отправка формы на почту</span>
+                </li>
+                <li>
+                  <img src="/images/research.png" alt="" />
+                  <span>подключение аналитики</span>
+                </li>
+              </ul>
+            </div>
+          </li>
 
-            <ul class="card__description">
-              <li>
-                <img src="/images/responsive.png" alt="" />
-                <span>адаптивный дизайн</span>
-              </li>
-              <li>
-                <img src="/images/logo-label.png" alt="" />
-                <span>создание логотипа</span>
-              </li>
-              <li>
-                <img src="/images/research.png" alt="" />
-                <span>подключение аналитики</span>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
+          <li class="card">
+            <header class="card__thumb">
+              <a href="http://merkury.kl1m.pro/" target="_blank">
+                <img src="/images/Logo-merkury.png" />
+              </a>
+            </header>
+            <div class="card__body">
+              <div class="card__category"><a href="#">beta</a></div>
+              <h2 class="card__title">
+                <a href="http://merkury.kl1m.pro/" target="_blank"
+                  >merkury.com</a
+                >
+              </h2>
+              <div class="card__subtitle">Аналитический сервис</div>
+              <img src="/images/down-arrow.png" alt="" class="card__icon" />
+
+              <ul class="card__description">
+                <li>
+                  <img src="/images/responsive.png" alt="" />
+                  <span>адаптивный дизайн</span>
+                </li>
+                <li>
+                  <img src="/images/logo-label.png" alt="" />
+                  <span>создание логотипа</span>
+                </li>
+                <li>
+                  <img src="/images/research.png" alt="" />
+                  <span>подключение аналитики</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="card">
+            <header class="card__thumb"><img src="/images/valdi.png" /></header>
+            <div class="card__body">
+              <div class="card__category"><a href="#">complete</a></div>
+              <h2 class="card__title">
+                <a href="#" target="_blank">valdi.dp.ua</a>
+              </h2>
+              <div class="card__subtitle">Строительная компания</div>
+              <img src="/images/down-arrow.png" alt="" class="card__icon" />
+
+              <ul class="card__description">
+                <li>
+                  <img src="/images/logo-label.png" alt="" />
+                  <span>создание логотипа</span>
+                </li>
+
+                <li>
+                  <img src="/images/form.png" alt="" />
+                  <span>форма заявки</span>
+                </li>
+                <li>
+                  <img src="/images/email.png" alt="" />
+                  <span>отправка формы на почту</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="card">
+            <header class="card__thumb">
+              <img src="/images/LogoEuroContract.jpg" />
+            </header>
+            <div class="card__body">
+              <div class="card__category"><a href="#">complete</a></div>
+              <h2 class="card__title">
+                <a href="" target="_blank">eurocontract.com.ua</a>
+              </h2>
+              <div class="card__subtitle">Украинско-австрийское СП</div>
+              <img src="/images/down-arrow.png" alt="" class="card__icon" />
+
+              <ul class="card__description">
+                <li>
+                  <img src="/images/logo-label.png" alt="" />
+                  <span>создание логотипа</span>
+                </li>
+
+                <li>
+                  <img src="/images/form.png" alt="" />
+                  <span>форма заявки</span>
+                </li>
+                <li>
+                  <img src="/images/email.png" alt="" />
+                  <span>отправка формы на почту</span>
+                </li>
+                <li>
+                  <img src="/images/research.png" alt="" />
+                  <span>подключение аналитики</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="contact-wrapper" id="contacts">
@@ -289,16 +415,14 @@
         </a>
       </div>
 
-      <form class="form">
+      <form class="form" id="form">
         <input type="hidden" name="project_name" value="Site" />
         <input type="hidden" name="admin_email" value="kl1m.done@gmail.com" />
         <input type="hidden" name="form_subject" value="Заявка" />
         <div class="container">
           <div class="left">
             <div class="login">Оставьте заявку</div>
-            <div class="eula">
-              Я с вами свяжусь и мы обсудим ваш будущий сайт!
-            </div>
+            <div class="eula">Я с вами свяжусь и мы обсудим вашу идею!</div>
           </div>
           <div class="right">
             <svg viewBox="0 0 320 300">
@@ -321,11 +445,16 @@
             </svg>
             <div class="form-input">
               <label for="email">Ваш email</label>
-              <input type="email" name="email" id="email" />
+              <input
+                type="email"
+                name="Почта"
+                id="email"
+                placeholder="example@gmail.com"
+              />
               <label for="text">Сообщение</label>
               <input
                 type="text"
-                name="text"
+                name="Сообщение"
                 id="text"
                 placeholder="Привет, я хочу сайт!"
               />
