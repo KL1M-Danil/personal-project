@@ -22,7 +22,6 @@
         "@context" : "http://schema.org",
         "@type" : "Product",
         "name" : "Landing page",
-        "image" : "https://www.livechatinc.com/wp-content/uploads/2016/03/how-to-create-a-landing-page@2x.png",
         "description" : "Лендинг</B> это интернет-страница, направленная на побуждение пользователя совершить какое-либо действие: подписаться на рассылку, купить продукт, скачать софт",
         "brand" : {
           "@type" : "Brand",
@@ -35,15 +34,19 @@
       }
     </script>
 
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta
+      name="description"
+      content="Я - front-end разработчик, разработаю вам сайт по самой низкой цене. 
+      Верстаю лендинги, сайты визитки и интернет-магазины. Вложусь в самые быстрые сроки."
+    />
+    <meta name="keywords" content="сайты, разработка лендингов, front-end developer" />
     <meta name="theme-color" content="#000000" />
     <meta name="copyright" content="Klimenko Danil" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Klimenko Web Developer" />
+    <meta name="apple-mobile-web-app-title" content="kl1m.pro" />
     <meta name="apple-mobile-web-app-status-bar-style" content="white" />
     <meta name="msapplication-TileImage" content="/images/favicon.png" />
     <meta name="msapplication-TileColor" content="#000000" />
@@ -52,6 +55,11 @@
 
     <title>Klimenko Danil</title>
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <script src="js/wow.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Exo+2:300,400,700"
       rel="stylesheet"
@@ -117,44 +125,14 @@
 
     <div class="tech-wrapper" id="tech">
       <h3 class="tech-title-main">Разработка</h3>
-      <div class="tech-box">
+      <div class="tech-box wow fadeInLeft">
         <h3 class="tech-name">Landing page</h3>
         <p class="tech-text">
           <b>Лендинг</b> это интернет-страница, направленная на побуждение
           пользователя совершить какое-либо действие: подписаться на рассылку,
-          купить продукт, скачать софт
+          купить продукт, скачать софт.
         </p>
-        <!-- <ul class="tech-list">
-          <li class="tech-item">
-            <img src="/images/plus-icon.png" alt="" />
-            <p class="tech-item-name">
-              сосредоточенность пользователя на одном действии (цели)
-            </p>
-          </li>
-          <li class="tech-item">
-            <img src="/images/plus-icon.png" alt="" />
-            <p class="tech-item-name">
-              увеличение числа потенциальных потребителей
-            </p>
-          </li>
-          <li class="tech-item">
-            <img src="/images/plus-icon.png" alt="" />
-            <p class="tech-item-name">
-              усиление эффективности рекламной кампании
-            </p>
-          </li>
-          <li class="tech-item">
-            <img src="/images/plus-icon.png" alt="" />
-            <p class="tech-item-name">
-              относительно невысокая стоимость разработки
-            </p>
-          </li>
-        </ul>
-        <img
-          src="https://www.livechatinc.com/wp-content/uploads/2016/03/how-to-create-a-landing-page@2x.png"
-          alt=""
-          class="tech-img"
-        /> -->
+
         <h3 class="tech-name">Сайт визитка</h3>
         <p class="tech-text">
           Это своего рода <b>виртуальная</b> визитная карточка: небольшой сайт с
@@ -171,14 +149,13 @@
         </p>
       </div>
 
-      <div class="tech-box ">
+      <div class="tech-box wow fadeInRight">
         <h3 class="tech-name">
           О технологиях<br />
           <b>которые я использую</b>
         </h3>
 
         <ul>
-          <i> </i>
           <li class="tech-text">
             <b>БЭМ.</b> Методология БЭМ создана в Яндексе для разработки сайтов,
             которые надо делать быстро, а поддерживать долгие годы. Она
@@ -186,31 +163,21 @@
             интерфейса.
           </li>
           <li class="tech-text">
-            <b>REM вместо PX.</b> При изменении размера шрифта элемента для
-            разных экранов все элементы на странице масштабируются
+            <b>Шрифт в REM вместо PX.</b> При изменении размера шрифта элемента
+            для разных экранов все элементы на странице масштабируются
             пропорционально. Т. е. не теряется соотношение между размером букв,
             отступами в блоке, расстоянием между блоками и т. д.
           </li>
-        </ul>
-
-        <!-- <ul class="tech-list">
-          <li class="tech-item">
-            <img src="/images/plus-icon.png" alt="" />
-            <p class="tech-item-name">
-              в кнопку легче попадать пальцем, если она крупная
-            </p>
-          </li>
-          <li class="tech-item">
-            <img src="/images/plus-icon.png" alt="" />
-            <p class="tech-item-name">
-              текст в метро легче читать, если он 20 пунктов, а не 14
-            </p>
+          <li class="tech-text">
+            <b>Иконки в SVG.</b> Объекты .svg занимают гораздо меньше места, чем
+            их близнецы, созданные как объект растровой графики. При помощи CSS
+            можно быстро изменить параметр графики на сайте, например, цвет фона
+            или позицию логотипа на странице.
           </li>
         </ul>
-        <img src="/images/adaptive-design-1.png" alt="" class="tech-img" /> -->
       </div>
 
-      <div class="tech-box tech-box-main">
+      <div class="tech-box tech-box-main wow fadeInUp">
         <div class="tech-box-mini">
           <h3 class="tech-title">Услуги:</h3>
           <div class="tech-part">
@@ -220,14 +187,13 @@
           <div class="tech-part">
             <span class="tech-price">от 80$</span>
             <span class="tech-price">от 60$</span>
-            <span class="tech-price">от 100$</span>
+            <span class="tech-price">от 200$</span>
           </div>
         </div>
 
         <div class="tech-box-mini">
           <h3 class="tech-title">Дополнительные услуги:</h3>
           <div class="tech-part">
-          
             <ul>
               <li>Создание логотипа</li>
               <li>Отправка заявки на вашу почту</li>
@@ -250,10 +216,10 @@
       <div class="review-wrapper" id="review">
         <h3 class="review-name">Мои работы</h3>
         <ul class="card-box">
-          <li class="card">
+          <li class="card wow zoomInLeft">
             <header class="card__thumb">
               <a href="https://rtk.in.ua" target="_blank">
-                <img src="/images/logo.png" />
+                <img src="/images/logo.png" alt="logo" />
               </a>
             </header>
             <div class="card__body">
@@ -262,38 +228,42 @@
                 <a href="https://rtk.in.ua" target="_blank">rtk.in.ua</a>
               </h2>
               <div class="card__subtitle">Логистическая компания</div>
-              <img src="/images/down-arrow.png" alt="" class="card__icon" />
+              <img
+                src="/images/down-arrow.png"
+                alt="buttom to open menu"
+                class="card__icon"
+              />
 
               <ul class="card__description">
                 <li>
-                  <img src="/images/responsive.png" alt="" />
+                  <img src="/images/responsive.png" alt="adaptive design" />
                   <span>адаптивный дизайн</span>
                 </li>
                 <li>
-                  <img src="/images/logo-label.png" alt="" />
+                  <img src="/images/logo-label.png" alt="create logo" />
                   <span>создание логотипа</span>
                 </li>
 
                 <li>
-                  <img src="/images/form.png" alt="" />
+                  <img src="/images/form.png" alt="form" />
                   <span>сложная форма заявки</span>
                 </li>
                 <li>
-                  <img src="/images/email.png" alt="" />
+                  <img src="/images/email.png" alt="form to email" />
                   <span>отправка формы на почту</span>
                 </li>
                 <li>
-                  <img src="/images/research.png" alt="" />
+                  <img src="/images/research.png" alt="connect analytics" />
                   <span>подключение аналитики</span>
                 </li>
               </ul>
             </div>
           </li>
 
-          <li class="card">
+          <li class="card wow zoomInUp">
             <header class="card__thumb">
               <a href="http://merkury.kl1m.pro/" target="_blank">
-                <img src="/images/Logo-merkury.png" />
+                <img src="/images/Logo-merkury.png" alt="logo" />
               </a>
             </header>
             <div class="card__body">
@@ -304,81 +274,91 @@
                 >
               </h2>
               <div class="card__subtitle">Аналитический сервис</div>
-              <img src="/images/down-arrow.png" alt="" class="card__icon" />
+              <img
+                src="/images/down-arrow.png"
+                alt="buttom to open menu"
+                class="card__icon"
+              />
 
               <ul class="card__description">
                 <li>
-                  <img src="/images/responsive.png" alt="" />
+                  <img src="/images/responsive.png" alt="adaptive design" />
                   <span>адаптивный дизайн</span>
                 </li>
                 <li>
-                  <img src="/images/logo-label.png" alt="" />
+                  <img src="/images/logo-label.png" alt="create logo" />
                   <span>создание логотипа</span>
                 </li>
                 <li>
-                  <img src="/images/research.png" alt="" />
+                  <img src="/images/research.png" alt="connect analytics" />
                   <span>подключение аналитики</span>
                 </li>
               </ul>
             </div>
           </li>
 
-          <li class="card">
-            <header class="card__thumb"><img src="/images/valdi.png" /></header>
+          <li class="card wow zoomInUp">
+            <header class="card__thumb">
+              <img src="/images/valdi.png" alt="logo" />
+            </header>
             <div class="card__body">
               <div class="card__category"><a href="#">complete</a></div>
-              <h2 class="card__title">
-                <a href="#" target="_blank">valdi.dp.ua</a>
-              </h2>
+              <h2 class="card__title"><a href="#">valdi.dp.ua</a></h2>
               <div class="card__subtitle">Строительная компания</div>
-              <img src="/images/down-arrow.png" alt="" class="card__icon" />
+              <img
+                src="/images/down-arrow.png"
+                alt="buttom to open menu"
+                class="card__icon"
+              />
 
               <ul class="card__description">
                 <li>
-                  <img src="/images/logo-label.png" alt="" />
+                  <img src="/images/logo-label.png" alt="create logo" />
                   <span>создание логотипа</span>
                 </li>
 
                 <li>
-                  <img src="/images/form.png" alt="" />
+                  <img src="/images/form.png" alt="form" />
                   <span>форма заявки</span>
                 </li>
                 <li>
-                  <img src="/images/email.png" alt="" />
+                  <img src="/images/email.png" alt="form to email" />
                   <span>отправка формы на почту</span>
                 </li>
               </ul>
             </div>
           </li>
 
-          <li class="card">
+          <li class="card wow zoomInRight">
             <header class="card__thumb">
-              <img src="/images/LogoEuroContract.jpg" />
+              <img src="/images/LogoEuroContract.jpg" alt="logo" />
             </header>
             <div class="card__body">
               <div class="card__category"><a href="#">complete</a></div>
-              <h2 class="card__title">
-                <a href="" target="_blank">eurocontract.com.ua</a>
-              </h2>
+              <h2 class="card__title"><a href="">eurocontract.com.ua</a></h2>
               <div class="card__subtitle">Украинско-австрийское СП</div>
-              <img src="/images/down-arrow.png" alt="" class="card__icon" />
+              <img
+                src="/images/down-arrow.png"
+                alt="buttom to open menu"
+                class="card__icon"
+              />
 
               <ul class="card__description">
                 <li>
-                  <img src="/images/logo-label.png" alt="" />
+                  <img src="/images/logo-label.png" alt="create logo" />
                   <span>создание логотипа</span>
                 </li>
 
                 <li>
-                  <img src="/images/form.png" alt="" />
+                  <img src="/images/form.png" alt="form" />
                   <span>форма заявки</span>
                 </li>
                 <li>
-                  <img src="/images/email.png" alt="" />
+                  <img src="/images/email.png" alt="form to email" />
                   <span>отправка формы на почту</span>
                 </li>
                 <li>
-                  <img src="/images/research.png" alt="" />
+                  <img src="/images/research.png" alt="connect analytics" />
                   <span>подключение аналитики</span>
                 </li>
               </ul>
@@ -390,7 +370,7 @@
 
     <div class="contact-wrapper" id="contacts">
       <h3 class="contact-title">Мои контакты</h3>
-      <div class="social-box">
+      <div class="social-box wow pulse">
         <a href="https://t.me/kl1md" class="social-item" target="_blank">
           <img src="/images/telegram.png" alt="telegram" class="social-link" />
           <h4 class="social-name">telegram</h4>
@@ -416,9 +396,9 @@
       </div>
 
       <form class="form" id="form">
-        <input type="hidden" name="project_name" value="Site" />
+        <input type="hidden" name="project_name" value="KL1M.PRO" />
         <input type="hidden" name="admin_email" value="kl1m.done@gmail.com" />
-        <input type="hidden" name="form_subject" value="Заявка" />
+        <input type="hidden" name="form_subject" value="Заявка c сайта" />
         <div class="container">
           <div class="left">
             <div class="login">Оставьте заявку</div>
@@ -474,9 +454,10 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="slick/slick.min.js" />
+    <!-- <link rel="stylesheet" href="slick/slick.min.js" />
     <link rel="stylesheet" href="slick/slick-theme.scss" />
-    <script src="slick/slick.min.js"></script>
+    <script src="slick/slick.min.js"></script> -->
     <script src="js/scripts.min.js"></script>
+    <script></script>
   </body>
 </html>

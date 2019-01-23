@@ -49,14 +49,6 @@ document.querySelector("#submit").addEventListener("focus", function(e) {
   });
 });
 
-$(document).ready(function(){
-  $('.section').slick({
-    infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 3
-  });
-});
-
 //Aнимация появления блоков
 
 var delay = anime({
@@ -115,13 +107,6 @@ function onNavClick(event) {
 //   }
 // }
 
-$(document).ready(function(){
-  $('.tech-slider').slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 1
-  });
-});
 		
 
 //Заявка
@@ -167,7 +152,7 @@ $(document).mouseup(function(e) {
 
 $(document).ready(function() {
   //ID блока с ссылками #prime_nav
-  $("#to-tech").on("click", "a", function(event) {
+  $("#tech, #review, #contacts").on("click", "a", function(event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
 
@@ -177,9 +162,12 @@ $(document).ready(function() {
       top = $(id).offset().top;
 
     //анимируем переход на расстояние - top за 1200 мс
-    $("body,html").animate({ scrollTop: top }, 1200);
+    $("body, html").animate({ scrollTop: top }, 1200);
   });
 });
 
 //При обновление страници наверх
 window.scrollTo(0, 0);
+
+//Иницилизация WOW.JS
+new WOW().init();

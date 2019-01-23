@@ -222,12 +222,15 @@
 }
 
 @media (min-width: 676px) {
+  
+
   .card {
     margin-bottom: 0;
     margin-right: 40px;
     border-radius: 0;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+
   }
 
   .card:last-child {
@@ -246,12 +249,15 @@
   }
 }
 
-@media (min-width: 540px) and (max-width: 1200px) {
-  .card-box {
-    // min-width: 1220px;
-  }
-
+@media (min-width: 540px) and (max-width: 678px) {
   .card {
-    margin-bottom: 180px;
+    margin-right: 5%;
   }
 }
+
+
+@media (min-width: 678px) and  (max-width: 1200px) {
+    .card {
+      margin-bottom: 190px;
+    }
+  }
