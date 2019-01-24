@@ -78,6 +78,7 @@ var cssProperties = anime({
   delay: 3500,
   duration: 3000
 });
+//адаптивное меню
 
 const nav = document.querySelector(".nav-toggle");
 const navList = document.querySelector(".nav");
@@ -97,17 +98,17 @@ function onNavClick(event) {
   }
 }
 
-// for (let i = 0; i < navLinkA.length; i += 1) {
-//   navLinkA[i].addEventListener("click", onNavLinkAClick);
+// закрытие адаптивного меню по нажатию на анкор
 
-//   function onNavLinkAClick(event) {
-//     event.preventDefault();
-
-//     navList.classList.toggle("nav-open");
-//   }
-// }
-
-		
+$(".nav-link").click(function() {
+  $(".nav-link").removeClass("nav-link-open");
+});
+$(".nav-link").click(function() {
+  $(".nav").removeClass("nav-open");
+});
+$(".nav-link").click(function() {
+  $(".nav-toggle").removeClass("open");
+});
 
 //Заявка
 
@@ -152,7 +153,7 @@ $(document).mouseup(function(e) {
 
 $(document).ready(function() {
   //ID блока с ссылками #prime_nav
-  $("#tech, #review, #contacts").on("click", "a", function(event) {
+  $(".nav").on("click", "a", function(event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
 

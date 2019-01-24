@@ -74,7 +74,8 @@ var cssProperties = anime({
   opacity: 1,
   delay: 3500,
   duration: 3000
-});
+}); //адаптивное меню
+
 var nav = document.querySelector(".nav-toggle");
 var navList = document.querySelector(".nav");
 var navLink = document.querySelectorAll(".nav-link");
@@ -89,15 +90,18 @@ function onNavClick(event) {
   for (var i = 0; i < navLink.length; i += 1) {
     navLink[i].classList.toggle("nav-link-open");
   }
-} // for (let i = 0; i < navLinkA.length; i += 1) {
-//   navLinkA[i].addEventListener("click", onNavLinkAClick);
-//   function onNavLinkAClick(event) {
-//     event.preventDefault();
-//     navList.classList.toggle("nav-open");
-//   }
-// }
-//Заявка
+} // закрытие адаптивного меню по нажатию на анкор
 
+
+$(".nav-link").click(function () {
+  $(".nav-link").removeClass("nav-link-open");
+});
+$(".nav-link").click(function () {
+  $(".nav").removeClass("nav-open");
+});
+$(".nav-link").click(function () {
+  $(".nav-toggle").removeClass("open");
+}); //Заявка
 
 $("body form.form").submit(function () {
   var th = $(this);
@@ -130,7 +134,7 @@ $(document).mouseup(function (e) {
 
 $(document).ready(function () {
   //ID блока с ссылками #prime_nav
-  $("#tech, #review, #contacts").on("click", "a", function (event) {
+  $(".nav").on("click", "a", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault(); //забираем идентификатор бока с атрибута href
 
