@@ -33,10 +33,10 @@
   }
 }
 
-.tech-box ul i{
-    content: '\2022';
-    width: 10px;
-    height: 10px;
+.tech-box ul i {
+  content: "\2022";
+  width: 10px;
+  height: 10px;
 }
 
 .tech-box-main {
@@ -45,11 +45,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   color: $main-font-color;
-  min-width: 320px;
+  min-width: 280px;
 }
 
 .tech-box-mini {
-  flex-basis: 48%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -78,7 +78,7 @@
 
 .tech-title {
   font-size: 18px;
-  flex-basis: 100%;
+  width: 100%;
   margin: 0;
   margin-bottom: 30px;
 }
@@ -174,6 +174,7 @@
   }
 
   .tech-box-mini {
+    width: 48%;
     margin-bottom: 0;
   }
 

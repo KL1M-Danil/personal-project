@@ -72,12 +72,6 @@ var delay = anime({
   duration: 3000
 });
 
-var cssProperties = anime({
-  targets: "#cert-box",
-  opacity: 1,
-  delay: 3500,
-  duration: 3000
-});
 //адаптивное меню
 
 const nav = document.querySelector(".nav-toggle");

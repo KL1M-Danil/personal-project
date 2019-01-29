@@ -4,18 +4,17 @@
   background-repeat: no-repeat;
   margin-bottom: 50px;
   padding-bottom: 50px;
-  min-height: 80vh;
+  //min-height: 80vh;
   transform-style: inherit;
- 
 }
 
 .promo-wrapper {
   max-width: 1320px;
+
   margin: auto;
-  padding-top: 150px;
+  padding-top: 120px;
   margin-bottom: 50px;
   text-align: center;
-  
 }
 
 .header {
@@ -128,7 +127,6 @@
 
 .logo {
   width: 130px;
-  height: 45px;
   padding-bottom: 5px;
 }
 
@@ -139,6 +137,7 @@
   margin-bottom: 15px;
   width: 90%;
   opacity: 0;
+  text-shadow: 2px 2px 4px #aaaaaa;
 }
 
 .promo-img {
@@ -147,7 +146,7 @@
   filter: grayscale(10%);
   border: 2px solid $accent-color;
   border-radius: 45px;
-  transform: rotate(-45deg) translateY(-30px) translateX(30px);
+  transform: rotate(-45deg) translateY(-15px) translateX(15px);
   box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -218,7 +217,7 @@
 
     &__text {
       display: inline;
-      float: left;
+      //float: left;
       margin: 0;
     }
 
@@ -227,13 +226,6 @@
       padding: 0 30px;
       text-align: center;
       list-style: none;
-
-      -webkit-animation-name: change;
-      -webkit-animation-duration: 10s;
-      -webkit-animation-iteration-count: infinite;
-      animation-name: change;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
 
       &__item {
         line-height: 40px;
@@ -398,8 +390,6 @@
 .cert-box {
   width: 160px;
   margin: auto;
-  opacity: 0.1;
-  box-shadow: 0 0 40px 16px rgba(0, 0, 0, 0.22);
   border-radius: 25px;
 }
 
@@ -411,7 +401,6 @@
   border: 2px solid $accent-color;
   border-bottom: none;
   padding: 15px 20px 0 20px;
-  //background-color: rgba(0, 0, 0, 0.7);
 }
 
 .cert-img {
@@ -428,11 +417,12 @@
   height: 30px;
   background: #fff;
   border-radius: 0 0 25px 25px;
-  padding: 5px;
+  padding-top: 5px;
+  border: 2px solid #c2c2c5;
+  text-align: center;
 }
 
 .cert-title {
-  padding-left: 10px;
   margin: 0;
   color: $main-font-color;
 }
@@ -442,6 +432,20 @@
   margin: 0 10% 10px 10%;
   color: #ff0000;
   opacity: 0;
+}
+
+@media (max-width: 320px) {
+  .promo-wrapper {
+    padding-top: 100px;
+  }
+
+  .promo-title {
+    font-size: 32px;
+  }
+
+  .header {
+    padding: 0;
+  }
 }
 
 @media (max-width: 676px) {
@@ -481,7 +485,7 @@
 
   .nav-open {
     transition: 0.2s;
-    transform: translateX(60px);
+    transform: translateX(35%);
     text-align: right;
     margin-top: 70px;
     top: -100px;
@@ -505,11 +509,15 @@
       line-height: 20px;
     }
   }
+
+  .promo-title {
+    margin-bottom: 50px;
+  }
 }
 
 @media (min-width: 676px) {
   .promo-container {
-    min-height: 90vh;
+    min-height: 80vh;
   }
 
   .promo-wrapper {
@@ -520,6 +528,7 @@
 
   .promo-img {
     width: 200px;
+    transform: rotate(-45deg) translateY(-30px) translateX(30px);
   }
 
   .promo-title {
@@ -532,6 +541,15 @@
 
   .promo-text {
     text-align: center;
+  }
+
+  .content__container__list {
+    -webkit-animation-name: change;
+    -webkit-animation-duration: 10s;
+    animation-name: change;
+    animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
   }
 
   .header {
