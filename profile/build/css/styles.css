@@ -381,7 +381,8 @@ body {
   color: #ffffff;
   font-family: "Exo 2", sans-serif;
   font-display: auto;
-  min-width: 330px;
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 *,
@@ -444,14 +445,16 @@ ul {
   position: relative;
   cursor: pointer;
   border-radius: 5px;
+  left: -5px;
 }
 
 .nav-toggle .hamburger {
   position: absolute;
   height: 100%;
   width: 100%;
+  line-height: 50px;
   top: 10px;
-  left: 10px;
+  text-align: center;
 }
 
 .nav-toggle .hamburger span {
@@ -484,7 +487,6 @@ ul {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   top: 10px;
-  left: 10px;
 }
 
 .nav-toggle .cross span {
@@ -1680,8 +1682,8 @@ input::placeholder {
 
   .nav {
     margin: 0;
-    -webkit-transform: translateX(300px);
-    transform: translateX(300px);
+    -webkit-transform: translateX(40px);
+    transform: translateX(40px);
   }
 
   .nav-link {
@@ -1702,8 +1704,6 @@ input::placeholder {
 
   .nav-open {
     transition: 0.2s;
-    -webkit-transform: translateX(35%);
-    transform: translateX(35%);
     text-align: right;
     margin-top: 70px;
     top: -100px;
@@ -1754,6 +1754,11 @@ input::placeholder {
 
   .header {
     padding: 0;
+    width: 100%;
+  }
+
+  .nav-toggle .cross {
+    width: 80%;
   }
 }
 

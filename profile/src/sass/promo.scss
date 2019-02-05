@@ -31,13 +31,15 @@
   position: relative;
   cursor: pointer;
   border-radius: 5px;
+  left: -5px;
 
   .hamburger {
     position: absolute;
     height: 100%;
     width: 100%;
+    line-height: 50px;
     top: 10px;
-    left: 10px;
+    text-align: center;
 
     span {
       display: block;
@@ -66,7 +68,7 @@
     width: 70%;
     transform: rotate(45deg);
     top: 10px;
-    left: 10px;
+
     span {
       display: block;
       background: $accent-color;
@@ -445,6 +447,17 @@
 
   .header {
     padding: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  // .nav-open {
+  //   transform: translateX(35%);
+  // }
+
+  .nav-toggle .cross {
+    width: 80%;
   }
 }
 
@@ -464,7 +477,7 @@
 
   .nav {
     margin: 0;
-    transform: translateX(300px);
+    transform: translateX(40px);
   }
 
   .nav-link {
@@ -485,7 +498,7 @@
 
   .nav-open {
     transition: 0.2s;
-    transform: translateX(35%);
+    //transform: translateX(45%);
     text-align: right;
     margin-top: 70px;
     top: -100px;
